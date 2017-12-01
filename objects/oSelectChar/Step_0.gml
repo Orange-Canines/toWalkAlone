@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+// loops though each character
 if (Current_Character > Max_Heroes){
 	Current_Character = 1;
 }

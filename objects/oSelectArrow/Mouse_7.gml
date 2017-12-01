@@ -1,3 +1,3 @@
-if (object_exists(oSelectChar)){
-	oSelectChar.Current_Character +=1;
-		}
+if (object_exists(oSelectChar)) {
+	oSelectChar.Current_Character += 1
+}
