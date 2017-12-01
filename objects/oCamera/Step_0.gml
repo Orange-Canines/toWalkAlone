@@ -1,7 +1,7 @@
 /// Step event follow the player cooly
 var char, i
-
-follow = global.selected
+if (room != rCharSelect)
+	follow = global.selected
 	
 if (follow != 0 and follow != noone) {
 	x2 = follow.x

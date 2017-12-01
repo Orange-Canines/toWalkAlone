@@ -5,4 +5,5 @@ global.tileQue  = ds_priority_create() // queue based on location to the selecte
 global.selected =  noone// what character is selected
 global.startMove = false // allows the selected character to move 
 global.selecting = false // is the pl
+global.charSelected = noone // 
 prevSelected = global.selected

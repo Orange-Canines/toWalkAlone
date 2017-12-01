@@ -90,7 +90,7 @@
             "Key": "2c429292-c3ac-4bc1-871a-49d9980653af",
             "Value": {
                 "id": "4a2a94ae-5e6e-43f2-b2cd-a8d7f7825c9f",
-                "resourcePath": "rooms\\room01\\room01.yy",
+                "resourcePath": "rooms\\rTest\\rTest.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "4daf95d1-eb95-48fd-aaeb-f02df4df788d",
-            "Value": {
-                "id": "0f6eae78-04a2-4aca-bc04-e17c105f90bd",
-                "resourcePath": "objects\\oSelectArrow\\oSelectArrow.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4f4c5400-b5ba-4650-bbf0-8a92783767e2",
             "Value": {
                 "id": "d350baeb-7376-4b09-9339-f0cf0c9932e4",
@@ -191,11 +183,11 @@
             }
         },
         {
-            "Key": "57360be3-cad1-406b-92e8-69b7a7150181",
+            "Key": "5bfa32ff-7dc1-4430-9b14-ba82bb966f40",
             "Value": {
-                "id": "95a78d5d-679a-428d-bfa2-6e272d160acf",
-                "resourcePath": "objects\\oCharEnter\\oCharEnter.yy",
-                "resourceType": "GMObject"
+                "id": "cb688230-6279-4846-b2de-31a912587fb0",
+                "resourcePath": "scripts\\array\\array.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -223,27 +215,11 @@
             }
         },
         {
-            "Key": "63877537-6467-4453-b7d3-2f360a5dd4d7",
-            "Value": {
-                "id": "5256e8a4-19fc-4396-ad65-66fafcd6b357",
-                "resourcePath": "objects\\oSelectChar\\oSelectChar.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "64fc9a24-5fff-4ce9-b288-4a7c2ad4ece7",
             "Value": {
                 "id": "982f44df-510e-4f28-861d-ed29cb8f2ea8",
                 "resourcePath": "objects\\oGlobalManager\\oGlobalManager.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "67084e05-9121-401c-ba4c-a88d202e1c75",
-            "Value": {
-                "id": "3e18e48a-bad3-46c9-9372-6dfa52769480",
-                "resourcePath": "scripts\\sInitCharacters\\sInitCharacters.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -290,7 +266,7 @@
             "Key": "85c27b18-a859-4958-ba39-44d8a40cb911",
             "Value": {
                 "id": "78550ef2-8a0b-464d-9440-34a19b03a59c",
-                "resourcePath": "objects\\oPartyManager\\oPartyManager.yy",
+                "resourcePath": "objects\\oCharSelectManager\\oCharSelectManager.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -300,14 +276,6 @@
                 "id": "0f51d482-b148-4ef8-b1c4-40c9916acf59",
                 "resourcePath": "scripts\\script1\\script1.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "87b42008-c57a-4e0f-b028-95e2315a317d",
-            "Value": {
-                "id": "394b0133-f888-4858-90b3-ac03e83d9347",
-                "resourcePath": "rooms\\room0\\room0.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -431,14 +399,6 @@
             }
         },
         {
-            "Key": "d34924f3-7958-49f2-a680-edda5bee6389",
-            "Value": {
-                "id": "113d5f39-2e57-4467-b714-03d2c4430590",
-                "resourcePath": "views\\d34924f3-7958-49f2-a680-edda5bee6389.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "daf354c5-d76f-4b1f-84b9-de3c63c236da",
             "Value": {
                 "id": "057f2b83-dab3-4d21-83c6-d6d1bf53d015",
@@ -506,7 +466,7 @@
             "Key": "f673dcdb-b62c-4fef-9627-4abbbdae3ad5",
             "Value": {
                 "id": "e6387673-545f-42bc-98c1-915fe716f958",
-                "resourcePath": "rooms\\rm_char_select\\rm_char_select.yy",
+                "resourcePath": "rooms\\rCharSelect\\rCharSelect.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -538,7 +498,7 @@
             "Key": "fc872582-9078-4ff9-aa8e-bfdda829c86b",
             "Value": {
                 "id": "f096e73d-17d7-4f64-bdd7-a7b0995f358b",
-                "resourcePath": "sprites\\sCharEnter\\sCharEnter.yy",
+                "resourcePath": "sprites\\sEnter\\sEnter.yy",
                 "resourceType": "GMSprite"
             }
         }
@@ -546,7 +506,7 @@
     "script_order": [
         "52448675-68d2-448c-bd2e-34feb10e20c3",
         "874ad103-c98a-4347-857c-a2d843a75e59",
-        "67084e05-9121-401c-ba4c-a88d202e1c75"
+        "5bfa32ff-7dc1-4430-9b14-ba82bb966f40"
     ],
     "tutorial": ""
 }
