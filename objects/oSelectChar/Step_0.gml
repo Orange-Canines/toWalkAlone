@@ -1,7 +1,9 @@
 // loops though each character
-if (Current_Character > Max_Heroes){
-	Current_Character = 1;
+if (currentCharacter > 6){
+	currentCharacter = 1;
 }
-if (Current_Character < 1){
-	Current_Character = Max_Heroes;
+
+
+if (currentCharacter < 1){
+	currentCharacter= maxHeroes    ;
 }
