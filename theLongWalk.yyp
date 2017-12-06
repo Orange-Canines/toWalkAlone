@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "9881ea54-1c57-4c7e-86cc-e3a5316fc98b",
+            "Value": {
+                "id": "879148f5-fdd8-4922-a610-5efd92728858",
+                "resourcePath": "scripts\\sRoomFromFile\\sRoomFromFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9898004b-8577-43af-a729-894afb2cf98e",
             "Value": {
                 "id": "4450bef5-efff-49e1-9e3d-fc336a44bc41",
@@ -539,7 +547,8 @@
         "52448675-68d2-448c-bd2e-34feb10e20c3",
         "874ad103-c98a-4347-857c-a2d843a75e59",
         "5bfa32ff-7dc1-4430-9b14-ba82bb966f40",
-        "735ed2fe-b2bd-4e2e-b695-fd973d149961"
+        "735ed2fe-b2bd-4e2e-b695-fd973d149961",
+        "9881ea54-1c57-4c7e-86cc-e3a5316fc98b"
     ],
     "tutorial": ""
 }

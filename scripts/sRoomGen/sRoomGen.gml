@@ -1,6 +1,6 @@
 // Create Arguements to create Map
-Max_height = 6;
-Max_length =1;
+Max_height = 10;
+Max_length =6;
 Max_height += 1;
 Max_length +=1;
 //////////////////////////////////
@@ -50,6 +50,8 @@ repeat (ds_grid_width(grid))
 //MapArray[2, 2] = oGround2;
 
  // ds_grid_set(grid, 1, 1, 2);
+ 
+
 //////////////////////////////////
 //Create map
 //////////////////////////////////
