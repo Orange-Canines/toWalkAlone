@@ -18,3 +18,4 @@ _y = 51
 alarm[0] = 1
 
 ds_list_add(global.tileList,self.id)
+
