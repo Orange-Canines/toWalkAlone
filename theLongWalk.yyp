@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "37d7a95c-d4bb-4182-82c0-58ccf9341531",
+            "Value": {
+                "id": "3667c365-b4c9-4f4d-be8c-f460c981e428",
+                "resourcePath": "scripts\\addToDepthGrid\\addToDepthGrid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3ac838da-2cfb-4612-935d-9d7205a31bf2",
             "Value": {
                 "id": "ad92f5c3-5c82-47dd-94c6-8d084b26791f",
@@ -391,6 +399,14 @@
             }
         },
         {
+            "Key": "9fea39e5-95b8-443d-a9af-ef4a2077334f",
+            "Value": {
+                "id": "0f1f83f4-4060-4678-8097-f38a9707ee78",
+                "resourcePath": "objects\\oDraw\\oDraw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a58b441b-4e40-45e4-a43e-749befb24524",
             "Value": {
                 "id": "5eab6798-12a0-4d9b-911c-c60c9fe50023",
@@ -583,6 +599,14 @@
             }
         },
         {
+            "Key": "f7d1eb3f-2f6a-4538-8ec0-48015aaac2ef",
+            "Value": {
+                "id": "d34811be-cb0a-4dd8-b793-d26ee3fc3fa9",
+                "resourcePath": "objects\\oDepthParent\\oDepthParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f7dff04e-3074-46d4-9848-ff455bbdd2a2",
             "Value": {
                 "id": "1e2e5088-5739-4fd9-85a8-df4ce50282d8",
@@ -619,7 +643,8 @@
         "735ed2fe-b2bd-4e2e-b695-fd973d149961",
         "9881ea54-1c57-4c7e-86cc-e3a5316fc98b",
         "5bfa32ff-7dc1-4430-9b14-ba82bb966f40",
-        "52448675-68d2-448c-bd2e-34feb10e20c3"
+        "52448675-68d2-448c-bd2e-34feb10e20c3",
+        "37d7a95c-d4bb-4182-82c0-58ccf9341531"
     ],
     "tutorial": ""
 }

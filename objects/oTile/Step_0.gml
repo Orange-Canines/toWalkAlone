@@ -27,4 +27,8 @@ if (contains != 0 and contains == global.selected and ds_queue_empty(global.move
 if ((global.startMove and enemyMove) or global.selected == 0) 
 	enemyMove = false
 
+if contains == global.selected and contains != 0
+	characterSelected = true
+else characterSelected = false
+	
 
