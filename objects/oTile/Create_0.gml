@@ -3,6 +3,7 @@ contains  = 0
 selected  = false
 queued    = false
 enemyMove = false
+playerMove = false
 characterSelected = false
 
 list      = ds_list_create()

@@ -1,2 +1,2 @@
 event_inherited()
-y += 40
+y += 20

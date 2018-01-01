@@ -6,6 +6,7 @@
     "children": [
         "81e93fd6-92b6-4bc0-9927-69db20d1257c",
         "4157cb08-4da8-49ed-ba1e-a76b576e8326",
+        "e0fc899e-c7b6-45a1-a4f4-35ea36c69d68",
         "0bc3c133-a06e-48a8-bbe6-30ef60eb9166",
         "ce08938d-aca7-42db-9d93-e8c6f04ef75b",
         "a808c078-a913-4c0a-b842-e0cd3ff370d4",
@@ -15,7 +16,13 @@
         "c405b1de-cbe9-4c33-beb3-6846fccc45dc",
         "1aae5340-57cf-4373-b783-898b19ece8cd",
         "7f3d5e90-c88d-4d14-a870-3f71ff053625",
-        "54bbe239-1e66-430b-9f78-3c7814680cbb"
+        "54bbe239-1e66-430b-9f78-3c7814680cbb",
+        "d3bbfb0a-1feb-4380-8fd8-114617840af0",
+        "923934e3-0ce8-467b-ad22-88a92fef36fa",
+        "5e56237f-6d29-428b-a5a3-ccba606ab384",
+        "cca2e11d-12d7-4c1b-8dc7-9577c7f7da61",
+        "d25d3e0b-6495-4c5f-a6c0-f4575445bfa7",
+        "5b375ec5-02e3-4948-8ee4-101f80c65241"
     ],
     "filterType": "GMSprite",
     "folderName": "ground ",

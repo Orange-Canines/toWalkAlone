@@ -6,4 +6,6 @@ global.selected =  noone// what character is selected
 global.startMove = false // allows the selected character to move 
 global.selecting = false // is the pl
 global.charSelected = noone // 
+global.dayTime = 0
 prevSelected = global.selected
+currentTime = 25

@@ -10,3 +10,8 @@ if (global.selected != prevSelected){
 	}
 	prevSelected = global.selected
 }
+if currentTime < 155
+	currentTime += 0.01
+else currentTime = 25
+
+global.dayTime = 1//sin((currentTime*pi)/180)
