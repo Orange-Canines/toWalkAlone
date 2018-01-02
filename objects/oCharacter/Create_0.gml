@@ -1,5 +1,7 @@
 // make the default character stuff
-
+Health = 0;
+Stamina =0; 
+Name = "Blank"
 tile = instance_nearest(x,y,oTile)
 x = tile.x
 y = tile.y

@@ -1,0 +1,2 @@
+DrawData=false;
+FullLines = "";
