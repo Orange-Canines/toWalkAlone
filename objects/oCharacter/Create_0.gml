@@ -7,7 +7,7 @@ x = tile.x
 y = tile.y
 
 ds_list_add(global.charList,self.id)
-
+CanTurn = false; 
 selected = false
 hasMoved = false
 completedMove = true

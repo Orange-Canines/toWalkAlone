@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "7ddfb1ab-b6eb-41fe-a3a4-81bb578decb6",
+            "Value": {
+                "id": "1779b243-3d68-46f0-9ae4-a3543a185738",
+                "resourcePath": "objects\\oTurnManager\\oTurnManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f3d5e90-c88d-4d14-a870-3f71ff053625",
             "Value": {
                 "id": "b88125da-2c80-4f99-a837-c5e68f832cc7",
