@@ -1,3 +1,4 @@
+/// @description Using the depth grid for 3D
 if(ds_exists(depthGrid,ds_type_grid)) {
 	ds_grid_sort(depthGrid, 1, true)
 	for(var yy = 0; yy < ds_grid_height(depthGrid); yy++) {
@@ -8,4 +9,4 @@ if(ds_exists(depthGrid,ds_type_grid)) {
 	}
 	ds_grid_destroy(depthGrid)
 }
-shader_set_uniform_f(time, global.dayTime)
+

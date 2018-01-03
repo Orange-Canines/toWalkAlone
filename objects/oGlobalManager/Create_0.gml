@@ -1,3 +1,4 @@
+/// @description Manages global variables
 global.charList = ds_list_create() // list of all playable characters
 global.tileList = ds_list_create() // list of every tile
 global.moveTileQue = ds_queue_create() // creates the movement path
@@ -6,6 +7,5 @@ global.selected =  noone// what character is selected
 global.startMove = false // allows the selected character to move 
 global.selecting = false // is the pl
 global.charSelected = noone // 
-global.dayTime = 0
 prevSelected = global.selected
-currentTime = 25
+

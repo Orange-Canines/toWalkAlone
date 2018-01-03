@@ -1,4 +1,4 @@
-/// creates the tiles
+/// @description Initialize variables for tiles
 contains  = 0
 selected  = false
 queued    = false

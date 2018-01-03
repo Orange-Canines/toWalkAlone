@@ -1,3 +1,4 @@
+/// @description draw itself and its appropriate overlay
 draw_self()
 if selected 
 	draw_sprite(sMove, 0, x, y)

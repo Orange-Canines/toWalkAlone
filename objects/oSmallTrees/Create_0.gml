@@ -1,3 +1,5 @@
+/// @description Display random trees
+
 // Inherit the parent event
 event_inherited();
 

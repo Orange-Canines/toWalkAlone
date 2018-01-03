@@ -1,3 +1,5 @@
+/// @description Sets the list of neighbors up
+// could most likely be optimized
 
 #region Finding the neighbors
 
