@@ -1,0 +1,3 @@
+FullLines = "";
+sLoadPlayerData();
+DrawData=true;
