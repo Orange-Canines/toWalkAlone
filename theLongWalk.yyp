@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "2d90bde8-ecc2-4adb-a31a-2569a827211a",
+            "Value": {
+                "id": "1178a97d-bbfa-4747-ab33-f9713d04f176",
+                "resourcePath": "rooms\\rTutorial\\rTutorial.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2fbbd558-784a-4cda-9444-208c04890e1f",
             "Value": {
                 "id": "c919bcd6-889f-430f-9ffd-c899c23b60c2",
@@ -604,6 +612,14 @@
                 "id": "0f1f83f4-4060-4678-8097-f38a9707ee78",
                 "resourcePath": "objects\\oDraw\\oDraw.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a18790a0-a36a-49ad-801e-9b809e099c48",
+            "Value": {
+                "id": "e786e760-9f11-4cef-ac26-9ae8f178af7d",
+                "resourcePath": "views\\a18790a0-a36a-49ad-801e-9b809e099c48.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
