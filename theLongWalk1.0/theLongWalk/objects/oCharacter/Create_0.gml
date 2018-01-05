@@ -13,3 +13,4 @@ selected = false
 hasMoved = false
 completedMove = true
 numMoves = 0
+dust = false

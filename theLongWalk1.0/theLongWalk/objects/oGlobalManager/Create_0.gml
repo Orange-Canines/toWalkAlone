@@ -6,6 +6,12 @@ global.tileQue      = ds_priority_create() // queue based on location to the sel
 global.selected     =  noone// what character is selected
 global.startMove    = false // allows the selected character to move 
 global.selecting    = false // is the pl
-global.charSelected = noone // 
+global.charSelected = noone // used for selecting character 
+
+global.group[0] = noone // contains the object id of the playable character
+global.group[1] = noone
+global.group[2] = noone
+global.group[3] = noone
+
 prevSelected        = global.selected
 
