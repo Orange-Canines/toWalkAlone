@@ -29,3 +29,17 @@ if global.group[2] != noone
 	draw_sprite(sIcon,global.group[2].icon,12+currentX,567)
 if global.group[3] != noone
 	draw_sprite(sIcon,global.group[3].icon,12+currentX,723)
+	
+// Draw Stats
+if 	(open != false){
+	draw_text(30,50, "Name: " + string(Last_Sel_hero.Name)) ;
+
+	draw_text(120,130,  string(Last_Sel_hero.Vit))
+	draw_text(120,165, string(Last_Sel_hero.End))
+	draw_text(120,195, string(Last_Sel_hero.Str))
+	draw_text(120,230, string(Last_Sel_hero.Dex))
+	draw_text(120,265, string(Last_Sel_hero.Wis))
+	draw_text(120,300, string(Last_Sel_hero.Int))
+	draw_text(120,335, string(Last_Sel_hero.Lck))
+	
+}

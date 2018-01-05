@@ -5,7 +5,10 @@
 // if the most recent dequeed tile has already been delt with 
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
-if (CanTurn) {
+NextToNpc();
+
+//if (CanTurn) {
+	
 	if (global.startMove and id = global.selected) {
 		if (!ds_queue_empty(global.moveTileQue)) {
 			if (completedMove) {
@@ -52,10 +55,13 @@ if (CanTurn) {
 	
 
 	// if this character is the selected character set the variable so it knows 
-	if (self.id = global.selected)
+	if (self.id = global.selected){
 		selected = true
+	    oInventory.Last_Sel_hero = global.selected;
+		}
 	else 
 		selected = false
 	
 	CanTurn = false
-}
+//}
+

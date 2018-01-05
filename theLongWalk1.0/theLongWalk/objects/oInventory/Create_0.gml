@@ -1,4 +1,5 @@
 /// @description Initialize variables
+Last_Sel_hero =  instance_find(oCharacter,0);
 arrow = virtual_key_add(31,170,88,88,vk_enter)
 position[0] = virtual_key_add(12,200,146,146,ord("1"))
 position[1] = virtual_key_add(12,360,146,146,ord("2"))
