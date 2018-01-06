@@ -11,13 +11,13 @@ if keyboard_check_released(vk_enter){
 	}
 }
 
-if keyboard_check_released(ord("1"))
+if keyboard_check_released(ord("1")) and global.group[0] != 0
 	global.selected = global.group[0]
-if keyboard_check_released(ord("2"))
+if keyboard_check_released(ord("2")) and global.group[1] != 0
 	global.selected = global.group[1]
-if keyboard_check_released(ord("3"))
+if keyboard_check_released(ord("3")) and global.group[2] != 0
 	global.selected = global.group[2]
-if keyboard_check_released(ord("4"))
+if keyboard_check_released(ord("4")) and global.group[3] != 0
 	global.selected = global.group[3]
 
 // based on the location of the Inventory, swap the arrow =>  <=
@@ -27,4 +27,4 @@ if currentX <= 10
 	arrowIndex = 0
 
 // slides to the new position
-currentX += (targetX-currentX)/10
+currentX += ceil((targetX-currentX)/10)

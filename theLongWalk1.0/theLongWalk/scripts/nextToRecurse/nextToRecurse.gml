@@ -1,4 +1,4 @@
-///nextTo(object,distance,tile)
+///nextToRecurse(object,distance,tile)
 
 var objectToCheck = argument0 
 var distance      = argument1 
@@ -13,7 +13,8 @@ for(var i = 0; i < 6; i++) {
 	
 	// if it has the object instantly 
 	// return true
-	if neighbor != noone and neighbor.contains != 0 and (neighbor.contains.object_index == objectToCheck or
+	if neighbor != noone and neighbor.contains != 0 and
+			(neighbor.contains.object_index == objectToCheck or
 			object_is_ancestor(neighbor.contains.object_index, objectToCheck))
 		return true
 		
