@@ -5,8 +5,6 @@
 // if the most recent dequeed tile has already been delt with 
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
-NextToNpc();
-
 //if (CanTurn) {
 	
 	if (global.startMove and id = global.selected) {
@@ -63,5 +61,6 @@ NextToNpc();
 		selected = false
 	
 	CanTurn = false
+	
 //}
 

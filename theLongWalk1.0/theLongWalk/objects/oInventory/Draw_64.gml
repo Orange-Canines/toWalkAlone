@@ -33,7 +33,6 @@ if global.group[3] != noone
 // Draw Stats
 if 	(open != false){
 	draw_text(30,50, "Name: " + string(Last_Sel_hero.Name)) ;
-
 	draw_text(120,130,  string(Last_Sel_hero.Vit))
 	draw_text(120,165, string(Last_Sel_hero.End))
 	draw_text(120,195, string(Last_Sel_hero.Str))

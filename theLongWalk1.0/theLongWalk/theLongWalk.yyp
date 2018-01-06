@@ -154,7 +154,7 @@
             "Key": "29038e8c-2c9b-4150-b64b-c374b3aff0ae",
             "Value": {
                 "id": "17ff8d51-2737-40e1-b397-1659cb676c2e",
-                "resourcePath": "scripts\\nextTo1\\nextTo1.yy",
+                "resourcePath": "scripts\\nextToRecurse\\nextToRecurse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1047,14 +1047,6 @@
             }
         },
         {
-            "Key": "f88e9b77-20d3-4d63-82fb-a6f025cd7225",
-            "Value": {
-                "id": "c712bce6-6c69-4b7d-ae76-92e4c5b7cba1",
-                "resourcePath": "scripts\\NextToNpc\\NextToNpc.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f9ce9ded-04ab-4156-aac9-38ecb83b9bfb",
             "Value": {
                 "id": "52a7057f-1403-49ca-ae4c-e86f7d91df52",
@@ -1090,7 +1082,6 @@
         "52448675-68d2-448c-bd2e-34feb10e20c3",
         "95e56cbc-c91a-4af9-ad6d-499c84f96868",
         "cdaa1f5f-be81-4657-9201-b1312ee6abaf",
-        "f88e9b77-20d3-4d63-82fb-a6f025cd7225",
         "29038e8c-2c9b-4150-b64b-c374b3aff0ae"
     ],
     "tutorial": ""
