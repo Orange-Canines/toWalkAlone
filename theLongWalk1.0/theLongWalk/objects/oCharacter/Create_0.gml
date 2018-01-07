@@ -1,5 +1,5 @@
 //stats
-Health  = choose (1,2,3,4,5)
+Health  = choose (7,6,5,8,9)
 Stamina = choose (1,2,3,4,5)
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)

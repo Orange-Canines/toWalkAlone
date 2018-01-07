@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oKnight0",
     "eventList": [
-        
+        {
+            "id": "90bfe002-6c45-4f92-97f2-dfeb6bccb7c2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1574b15e-f84a-4a77-a428-3a5ac567cffe"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "8be6f64d-d107-405c-bd44-8d2f231d387f",
