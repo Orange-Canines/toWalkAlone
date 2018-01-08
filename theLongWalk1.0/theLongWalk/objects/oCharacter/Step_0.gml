@@ -34,8 +34,13 @@
 		tile.contains = self.id
 		tile.queued   = false
 		completedMove = true
-		if !dust
-			instance_create_layer(x,y,"CharactersObjects",oDust)
+		if !dust {
+			var dustId = instance_create_layer(x,y,"CharactersObjects",oDust)
+			if tile.object_index == oGround1 || tile.object_index == oBridge
+				dustId.sprite_index = sDust
+			else if tile.object_index == oGround2
+				dustId.sprite_index = sSplash
+		}
 		dust = true
 	}
 
