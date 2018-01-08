@@ -48,7 +48,7 @@
 		if (position_meeting(mouse_x,mouse_y,self) and ds_queue_empty(global.moveTileQue))
 			global.selected = self.id
 	if (mouse_check_button_pressed(mb_left)) 
-		if (!position_meeting(mouse_x,mouse_y,oCharacter))
+		if (!position_meeting(mouse_x,mouse_y,oCharacter) && !position_meeting(mouse_x,mouse_y,oButton))
 			global.selected = 0
 	
 

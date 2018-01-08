@@ -1,0 +1,3 @@
+/// @description Variables
+
+clicked = false
