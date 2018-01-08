@@ -56,8 +56,7 @@
 	if (self.id = global.selected){
 		selected = true
 	    oInventory.Last_Sel_hero = global.selected;
-		}
-	else 
+	} else 
 		selected = false
 	
 	CanTurn = false

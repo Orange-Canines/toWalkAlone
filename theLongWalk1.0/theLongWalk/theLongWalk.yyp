@@ -1010,7 +1010,7 @@
             "Key": "eff38e50-355c-4989-9e45-e0c3253ae4b3",
             "Value": {
                 "id": "87298315-9bc6-4749-b0b7-3df837e06bbf",
-                "resourcePath": "sprites\\sHealthBlock\\sHealthBlock.yy",
+                "resourcePath": "sprites\\sHealth\\sHealth.yy",
                 "resourceType": "GMSprite"
             }
         },

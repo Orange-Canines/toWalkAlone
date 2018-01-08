@@ -15,14 +15,7 @@ talking      = false
 
 //  0     1    2     3       4
 // talk trade shop recruit accept
-/*
-Talk[0]= "The Swamp is no place for kids";
-Talk[1]= "Hi, Traveler, 600 gold and I will help you out";
-Talk[2]= "What do you want?";
-Talk[3]= "Want to Trade?";
-Talk[4]= "What do you want?, Get out of here.";
-*/
-// i have an array script and you can see how it works
+
 Talk = array("The Swamp is no place for kids",
 			 "Hi, Traveler, 600 gold and I will help you out",
 			 "What do you want?",

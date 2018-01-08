@@ -12,10 +12,10 @@ for (i = 0; i < ds_list_size(buttonList); i++) {
 				talking = true	
 			break;
 			case 1:
-				// trade
+				// type trade stuff here 
 			break;
 			case 2:
-				// shop
+				// do shoping here
 			break;
 			case 3:
 				// recruit

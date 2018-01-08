@@ -1,4 +1,4 @@
 event_inherited()
 
-actions = 3
-actionSprite = array(true,true,false,false,true)
+actions = 1
+actionSprite = array(true,false,false,false,false)
