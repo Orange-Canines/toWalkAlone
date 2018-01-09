@@ -13,15 +13,16 @@ if keyboard_check_released(vk_enter){
 }
 
 // Keyboard checks ... possible revamp???
-if keyboard_check_released(ord("1")) and global.group[0] != 0
-	global.selected = global.group[0]
-if keyboard_check_released(ord("2")) and global.group[1] != 0
-	global.selected = global.group[1]
-if keyboard_check_released(ord("3")) and global.group[2] != 0
-	global.selected = global.group[2]
-if keyboard_check_released(ord("4")) and global.group[3] != 0
-	global.selected = global.group[3]
-
+if (!global.selecting and !global.startMove) {
+	if keyboard_check_released(ord("1")) and global.group[0] != 0
+		global.selected = global.group[0]
+	if keyboard_check_released(ord("2")) and global.group[1] != 0
+		global.selected = global.group[1]
+	if keyboard_check_released(ord("3")) and global.group[2] != 0
+		global.selected = global.group[2]
+	if keyboard_check_released(ord("4")) and global.group[3] != 0
+		global.selected = global.group[3]
+}
 // based on the location of the Inventory, swap the arrow =>  <= 
 // also change the image index of the inventory so that its only 
 // the character select bar showing

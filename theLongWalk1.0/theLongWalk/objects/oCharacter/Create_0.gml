@@ -1,9 +1,9 @@
 /// @description Variables 
 //stats
 Health		 = choose (7,6,5,8,9)
-Max_Health	 = Health; 
-Stamina		 = choose (20,15,16)
-Max_Stamina	 = Stamina;
+maxHealth	 = Health; 
+Stamina		 = choose (5,6,7)
+maxStamina	 = Stamina;
 
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)
@@ -25,7 +25,7 @@ y       = tile.y
 alarm[0] = 1
 
 // Movement variables
-numMoves = 0
+numMoves = Stamina
 CanTurn  = false
 selected = false
 hasMoved = false

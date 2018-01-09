@@ -5,11 +5,11 @@ endY        = startY+(blockHeight*2)+(yGap*3)
 
 // update the X position of the black box
 if (Health >= Stamina) {
-	startX = x-((blockWidth*Health)/2)
-	endX   = x+((blockWidth*Health)/2)+(xGap*Health)+xGap
+	startX = x-((blockWidth*maxHealth)/2)
+	endX   = x+((blockWidth*maxHealth)/2)+(xGap*maxHealth)+xGap
 } else {
-	startX = x-((blockWidth*Stamina)/2)
-	endX   = x+((blockWidth*Stamina)/2)+(xGap*Stamina)+xGap
+	startX = x-((blockWidth*maxStamina)/2)
+	endX   = x+((blockWidth*maxStamina)/2)+(xGap*maxStamina)+xGap
 }
 
 // draw the black health/stamina box at 80% opacity

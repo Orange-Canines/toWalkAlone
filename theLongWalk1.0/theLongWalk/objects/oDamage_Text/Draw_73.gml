@@ -5,4 +5,8 @@ alpha -= .01;
 if (alpha < .1) 
 	instance_destroy();
 
-draw_text_color(x,y,myText,col ,col ,col ,col ,alpha)
+draw_text_color(currentX,currentY,myText,col ,col ,col ,col ,alpha)
+ySpd*=yGrav
+xSpd*=xGrav
+currentX += xSpd*xDir
+currentY += ySpd
