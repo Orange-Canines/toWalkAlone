@@ -1,7 +1,10 @@
 /// @description Variables 
 //stats
-Health  = choose (7,6,5,8,9)
-Stamina = choose (1,2,3,4,5)
+Health		 = choose (7,6,5,8,9)
+Max_Health	 = Health; 
+Stamina		 = choose (20,15,16)
+Max_Stamina	 = Stamina;
+
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)
 Str     = choose (1,2,3,4,5)

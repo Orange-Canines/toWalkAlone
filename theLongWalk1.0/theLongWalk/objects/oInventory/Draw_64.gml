@@ -1,3 +1,7 @@
+if (font_exists(Oswald) ) {
+	draw_set_font(Oswald)
+}
+
 /// @description Draw the Inventory
 draw_sprite(sInventory, imageIndex, currentX, 10)
 draw_sprite(sArrow,arrowIndex, 38+currentX,126)
@@ -34,11 +38,12 @@ if global.group[3] != noone
 // Draw Stats ... possible revamp???
 if 	(open != false){
 	draw_text(30,50, "Name: " + string(Last_Sel_hero.Name))
-	draw_text(120,130, string(Last_Sel_hero.Vit))
-	draw_text(120,165, string(Last_Sel_hero.End))
-	draw_text(120,195, string(Last_Sel_hero.Str))
-	draw_text(120,230, string(Last_Sel_hero.Dex))
-	draw_text(120,265, string(Last_Sel_hero.Wis))
-	draw_text(120,300, string(Last_Sel_hero.Int))
-	draw_text(120,335, string(Last_Sel_hero.Lck))
+	draw_text(115,122, string(Last_Sel_hero.Vit))
+	draw_text(115,157, string(Last_Sel_hero.End))
+	draw_text(115,192, string(Last_Sel_hero.Str))
+	draw_text(115,227, string(Last_Sel_hero.Dex))
+	draw_text(115,262, string(Last_Sel_hero.Wis))
+	draw_text(115,297, string(Last_Sel_hero.Int))
+	draw_text(115,332, string(Last_Sel_hero.Lck))
 }
+

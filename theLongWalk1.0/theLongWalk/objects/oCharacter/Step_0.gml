@@ -6,7 +6,7 @@
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
 //if (CanTurn) {
-	
+if (Stamina > 0){
 	if (global.startMove and id = global.selected) {
 		if (!ds_queue_empty(global.moveTileQue)) {
 			if (completedMove) {
@@ -34,12 +34,24 @@
 		tile.contains = self.id
 		tile.queued   = false
 		completedMove = true
+		
+		// Subtract Stamina
+
+		
+		// Do dust animation
 		if !dust {
 			var dustId = instance_create_layer(x,y,"CharactersObjects",oDust)
-			if tile.object_index == oGround1 || tile.object_index == oBridge
+			if tile.object_index == oGround1 || tile.object_index == oBridge{
 				dustId.sprite_index = sDust
-			else if tile.object_index == oGround2
+				Stamina -=1;
+			}
+			else if tile.object_index == oGround2{
 				dustId.sprite_index = sSplash
+				Stamina -=1;
+				Health +=1;
+				mydamage = instance_create_depth(x,y,depth,oDamage_Text)
+				mydamage.myText = "Swamp Damage   -1"
+				}
 		}
 		dust = true
 	}
@@ -65,6 +77,6 @@
 		selected = false
 	
 	CanTurn = false
-	
+}
 //}
 

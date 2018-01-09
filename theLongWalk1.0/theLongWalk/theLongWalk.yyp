@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1af9b8b2-9164-4e48-aa7e-6103b9cd62fc",
+            "Value": {
+                "id": "8f0dbb54-d9a9-4236-adf6-9c289ed2559e",
+                "resourcePath": "objects\\oDamage_Text\\oDamage_Text.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1c7b4730-d1c3-4a70-bc51-d8bd949a9651",
             "Value": {
                 "id": "e1d1c71d-bf0e-4a6a-adf6-689fa668552f",
@@ -532,6 +540,14 @@
                 "id": "fc36a4c4-0544-4e97-9e7e-687cdf144a2f",
                 "resourcePath": "sprites\\sSelector\\sSelector.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "823ce765-39fd-4507-ba2e-b57086155cfd",
+            "Value": {
+                "id": "fcbded73-7f51-46ab-ab28-22370cbd5989",
+                "resourcePath": "fonts\\Oswald\\Oswald.yy",
+                "resourceType": "GMFont"
             }
         },
         {
