@@ -402,7 +402,7 @@
             "Key": "52448675-68d2-448c-bd2e-34feb10e20c3",
             "Value": {
                 "id": "51a07ba5-a284-47e1-be8d-e774b7e6b0fe",
-                "resourcePath": "scripts\\findPaths\\findPaths.yy",
+                "resourcePath": "scripts\\displayNeighbor\\displayNeighbor.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -716,6 +716,14 @@
                 "id": "d6027722-9f09-4971-ae4c-7b50c5e6799c",
                 "resourcePath": "sprites\\sStamina\\sStamina.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a2661c33-9118-4068-ab09-c955d9ad1295",
+            "Value": {
+                "id": "3705fd40-2295-476c-8ce5-33a568ebaeed",
+                "resourcePath": "fonts\\OswaldCombatText\\OswaldCombatText.yy",
+                "resourceType": "GMFont"
             }
         },
         {
