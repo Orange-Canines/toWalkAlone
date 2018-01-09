@@ -6,7 +6,7 @@
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
 //if (CanTurn) {
-	numMoves = Stamina
+numMoves = Stamina
 	if (Stamina > 0){
 		if (global.startMove and id = global.selected) {
 			if (!ds_queue_empty(global.moveTileQue)) {

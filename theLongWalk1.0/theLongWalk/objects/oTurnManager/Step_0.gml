@@ -1,9 +1,13 @@
 // Add Stamina Back
 if keyboard_check_released(ord("N")) {
 	//Get list of all characters
-		for (i = 0; i < instance_number(oCharacter); i += 1)
-		   {
-			     Char[i] = instance_find(oCharacter,i);
-				 Char[i].Stamina	 += 2;
-		   }
+	for(var i = 0; i < 4; i++) {
+		if (global.group[i] != noone) {
+			var player = global.group[i]
+			repeat(2){
+				if (player.Stamina < player.maxStamina)
+					player.Stamina++
+			}
+		}
 	}
+}

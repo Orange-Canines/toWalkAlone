@@ -23,9 +23,8 @@ if (global.selecting and position_meeting(mouse_x,mouse_y,self) and global.selec
 
 // find all neighbors and recursivly travel through them setting the playerMove to true 
 // this marks the tiles for movement 
-if (contains != 0 and contains == global.selected and 
-		ds_queue_empty(global.moveTileQue) and global.selected.numMoves > 0) {
-	var neighbor, numMoves = global.selected.numMoves-1
+if (contains != 0 and contains == global.selected and ds_queue_empty(global.moveTileQue)) {
+	var neighbor, numMoves = global.selected.numMoves
 	if (numMoves > 0) {
 		for(var i = 0; i < 6; i++) {
 			neighbor = ds_list_find_value(list, i)
