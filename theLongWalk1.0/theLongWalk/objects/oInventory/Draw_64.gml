@@ -37,13 +37,13 @@ if global.group[3] != noone
 	
 // Draw Stats ... possible revamp???
 if 	(open != false){
-	draw_text(30,50, "Name: " + string(Last_Sel_hero.Name))
-	draw_text(115,122, string(Last_Sel_hero.Vit))
-	draw_text(115,157, string(Last_Sel_hero.End))
-	draw_text(115,192, string(Last_Sel_hero.Str))
-	draw_text(115,227, string(Last_Sel_hero.Dex))
-	draw_text(115,262, string(Last_Sel_hero.Wis))
-	draw_text(115,297, string(Last_Sel_hero.Int))
-	draw_text(115,332, string(Last_Sel_hero.Lck))
+	draw_text(30,50, "Name: " + string(Last_Sel_hero.Name) +" The "+ string(Last_Sel_hero.Class)  )
+	draw_text(115,117, string(Last_Sel_hero.Vit))
+	draw_text(115,152, string(Last_Sel_hero.End))
+	draw_text(115,187, string(Last_Sel_hero.Str))
+	draw_text(115,222, string(Last_Sel_hero.Dex))
+	draw_text(115,257, string(Last_Sel_hero.Wis))
+	draw_text(115,292, string(Last_Sel_hero.Int))
+	draw_text(115,327, string(Last_Sel_hero.Lck))
 }
 

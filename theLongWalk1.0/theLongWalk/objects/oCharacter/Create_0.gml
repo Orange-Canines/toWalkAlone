@@ -14,8 +14,8 @@ Int     = choose (1,2,3,4,5)
 Lck     = choose (1,2,3,4,5)
 Name    = choose ("Blank","Rex", "Titus", "Tiberious", 
 				  "Kyle", "Zach", "Sam", "Vlad", "Bosimer", 
-				  "Kush", "Cyrus", "Ventus")
-				  
+				  "Ceaser", "Cyrus", "Ventus")
+Class   = "None"
 // tile the character is standing on
 tile    = instance_nearest(x,y,oTile)
 x       = tile.x

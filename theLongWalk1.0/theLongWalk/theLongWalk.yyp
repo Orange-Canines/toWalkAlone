@@ -815,6 +815,22 @@
             }
         },
         {
+            "Key": "c0366ad5-55f6-4005-b3a3-2fba2a072a26",
+            "Value": {
+                "id": "08aaf005-2d32-46e3-83c8-a23820e7e391",
+                "resourcePath": "sprites\\sInspect\\sInspect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c16a85ed-4cae-460e-8901-601040f5c3b3",
+            "Value": {
+                "id": "755cdadd-a13d-4228-afe2-59c8b8d57a15",
+                "resourcePath": "fonts\\OswaldBigTurnCounter\\OswaldBigTurnCounter.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c405b1de-cbe9-4c33-beb3-6846fccc45dc",
             "Value": {
                 "id": "9285c00f-8027-4bc6-8b4d-4810e99f0776",

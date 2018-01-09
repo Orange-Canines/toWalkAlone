@@ -11,7 +11,8 @@
         "eb53ba05-f0e4-467f-bc19-3f86b4713e38",
         "34ff9c33-f3cb-41f4-b60a-a7922143a298",
         "eff38e50-355c-4989-9e45-e0c3253ae4b3",
-        "a0407927-a813-4bea-9b21-23a4600c67d2"
+        "a0407927-a813-4bea-9b21-23a4600c67d2",
+        "c0366ad5-55f6-4005-b3a3-2fba2a072a26"
     ],
     "filterType": "GMSprite",
     "folderName": "Inventory",
