@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "7c305677-c270-4c5f-b703-af647e05f520",
+            "Value": {
+                "id": "de894954-a5f1-4a31-93a9-1ded5b335c01",
+                "resourcePath": "sprites\\sChatButtonsHighlight\\sChatButtonsHighlight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ddfb1ab-b6eb-41fe-a3a4-81bb578decb6",
             "Value": {
                 "id": "7cf27eb8-d525-4117-a041-d15028d95c48",

@@ -1,6 +1,8 @@
 /// @description Creation Event
 event_inherited();
 
+TargettedHero = "Null"
+
 // Stat
 Health		 = choose (7,6,5,8,9)
 maxHealth	 = Health; 

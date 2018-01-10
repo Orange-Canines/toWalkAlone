@@ -10,12 +10,15 @@ for (i = 0; i < ds_list_size(buttonList); i++) {
 		switch(buttonId.image_index){
 			case 0:
 				talking = true	
+				Talk_No +=1;
+				if (Talk_No > 4)
+					Talk_No =0;
 			break;
 			case 1:
-				// type trade stuff here 
+				// trade
 			break;
 			case 2:
-				// do shoping here
+				// shop
 			break;
 			case 3:
 				// recruit

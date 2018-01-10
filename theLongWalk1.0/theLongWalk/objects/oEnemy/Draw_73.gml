@@ -28,8 +28,14 @@ for (var i = 0; i < Stamina; i++) {
 	draw_sprite(sStamina,0,startX + xGap + i*(blockWidth+xGap), startY + xGap + yGap + blockHeight)
 }
 
+
+
+draw_text(x-50,y-300, "Target: "  + string((TargettedHero.Name)))
 /* old debug
 draw_text(x-50,y-300, "Health: "  + string(Health))
 draw_text(x-50,y-320, "Stamina: " + string(Stamina))
 draw_text(x-50,y-340, "Name "     + string(Name))
+
+
+
 */
