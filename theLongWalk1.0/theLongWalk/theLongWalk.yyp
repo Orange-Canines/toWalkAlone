@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "042f405e-f9bd-4759-8032-4a94a07de3ff",
+            "Value": {
+                "id": "a34662f4-4474-4557-91a5-30a29ecffe7f",
+                "resourcePath": "sprites\\sBaricade\\sBaricade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "071f6365-1640-436a-9a82-5e970c9a93a8",
             "Value": {
                 "id": "56072096-2d60-456a-8e3e-95191fdd62a3",
@@ -516,6 +524,14 @@
                 "id": "ff9293bb-f27f-46fc-994d-07596bd93164",
                 "resourcePath": "views\\7a8e09fa-1d12-49c5-8563-380824595fd3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7bb107e1-82c0-479f-87fc-72fad91675f5",
+            "Value": {
+                "id": "67f34e46-b93b-4791-a408-e8201cb7f44a",
+                "resourcePath": "objects\\oBaricade\\oBaricade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
