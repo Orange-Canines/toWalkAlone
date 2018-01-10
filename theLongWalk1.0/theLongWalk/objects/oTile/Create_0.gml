@@ -1,10 +1,11 @@
 /// @description Initialize variables for tiles
-contains  = 0
-selected  = false
-queued    = false
-enemyMove = false
+contains   = 0
+selected   = false
+queued     = false
+enemyMove  = false
 playerMove = false
 characterSelected = false
+containsDecor     = array(noone,noone,noone)
 
 list      = ds_list_create()
 N  = noone

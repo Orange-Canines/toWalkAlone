@@ -5,7 +5,7 @@
     "name": "oBaricade",
     "eventList": [
         {
-            "id": "34315e69-17dc-4c39-a460-870fd45dde81",
+            "id": "e250deb5-bb97-476f-8393-babd863ff2c8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -16,6 +16,7 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "f7dff04e-3074-46d4-9848-ff455bbdd2a2",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -30,6 +31,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
+    "properties": null,
     "solid": false,
     "spriteId": "042f405e-f9bd-4759-8032-4a94a07de3ff",
     "visible": true
