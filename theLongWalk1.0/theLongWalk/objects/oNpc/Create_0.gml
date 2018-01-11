@@ -12,7 +12,7 @@ buttonList   = ds_list_create()
 actions      = 0
 actionSprite = array(false,false,false,false,false)
 talking      = false
-Talk_No      =0;
+Talk_No      = 0;
 //  0     1    2     3       4
 // talk trade shop recruit accept
 

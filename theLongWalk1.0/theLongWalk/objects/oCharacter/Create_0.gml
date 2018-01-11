@@ -24,6 +24,16 @@ y       = tile.y
 // set alarm to add to charlist
 alarm[0] = 1
 
+// Grouping
+inGroup      = false
+distFromTile = 210
+xSpace       = 110
+heightAndGap = 69
+buttonIndex  = 0
+buttonList   = ds_list_create()
+actions      = 1
+actionSprite = array(false,false,false,true,false)
+
 // Movement variables
 numMoves = Stamina
 CanTurn  = false

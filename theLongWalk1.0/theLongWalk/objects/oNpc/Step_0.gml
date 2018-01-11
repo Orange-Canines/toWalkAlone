@@ -25,12 +25,14 @@ if (nextToSelected(oCharacter,1) and ds_queue_empty(global.moveTileQue)) {
 		}
 	}
 } else {
-	// delete all buttons in the list 
-	for(i = 0; i < ds_list_size(buttonList); i++) {	
-		instance_destroy(ds_list_find_value(buttonList, i))
+		// delete all buttons in the list 
+	if (ds_exists(buttonList, ds_type_list)) {
+		for(i = 0; i < ds_list_size(buttonList); i++) {	
+			instance_destroy(ds_list_find_value(buttonList, i))
+		}
+		// clear the list and reset variables
+		ds_list_clear(buttonList)
 	}
-	// clear the list and reset variables
-	ds_list_clear(buttonList)
 	buttonNumber = 0
 	buttonIndex  = 0
 }

@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "4db15c06-4d75-4e8f-b952-fcfd7f3038a6",
+            "Value": {
+                "id": "1e6be39b-ee4f-4459-9570-c970d26bb1fb",
+                "resourcePath": "scripts\\deleteButtons\\deleteButtons.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4f4c5400-b5ba-4650-bbf0-8a92783767e2",
             "Value": {
                 "id": "91a82d77-9ac5-412f-b094-d5c23ae3b25e",
@@ -508,6 +516,14 @@
                 "id": "1e4d43fe-4e0b-4231-9a6b-4d8cdf7c3940",
                 "resourcePath": "objects\\oButton\\oButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "717cc34d-3215-4324-a77d-8f804131bc93",
+            "Value": {
+                "id": "b8173b4e-9be5-42fd-a811-c7b17e08e001",
+                "resourcePath": "scripts\\createButtons\\createButtons.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1244,7 +1260,9 @@
         "95e56cbc-c91a-4af9-ad6d-499c84f96868",
         "29038e8c-2c9b-4150-b64b-c374b3aff0ae",
         "0a8118a0-423c-4203-87df-8fae310a9beb",
-        "c4c35f44-0fbb-41ea-9a40-9dc86b9fe78a"
+        "c4c35f44-0fbb-41ea-9a40-9dc86b9fe78a",
+        "717cc34d-3215-4324-a77d-8f804131bc93",
+        "4db15c06-4d75-4e8f-b952-fcfd7f3038a6"
     ],
     "tutorial": ""
 }
