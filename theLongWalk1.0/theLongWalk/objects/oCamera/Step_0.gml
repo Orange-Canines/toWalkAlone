@@ -1,7 +1,9 @@
 /// @description Follow the player smoothly
 
 // set the follow to the selected character
-if (room != rCharSelect)
+if (room == rCharSelect)
+	follow = instance_find(oPlatform,0)
+else 
 	follow = global.selected
 
 // if there is something set as follow get the x and y values
@@ -9,7 +11,7 @@ if (follow != 0 and follow != noone) {
 	x2 = follow.x
 	y2 = follow.y
 } else { // if not when you click the left mouse button use the mouse position to move
-	if (mouse_check_button(mb_left)){
+	if (mouse_check_button(mb_left) && room != rCharSelect){
 		x2 -= mouse_x - mousexPrev
 		y2 -= mouse_y - mouseyPrev
 	}	

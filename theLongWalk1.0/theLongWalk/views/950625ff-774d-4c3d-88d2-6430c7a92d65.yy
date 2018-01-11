@@ -8,7 +8,8 @@
         "c9b8796c-fd94-4ef8-9bde-3eeed8deff99",
         "eabca75b-ef6f-4078-92a5-24f62acd1d8b",
         "7613be2a-dedc-4d80-bf14-54f5e2c1e37c",
-        "8f61597e-78a1-4eeb-9ead-5da2a8464979"
+        "8f61597e-78a1-4eeb-9ead-5da2a8464979",
+        "62a05097-cbae-4cb0-b30f-75dab6c6361d"
     ],
     "filterType": "GMSprite",
     "folderName": "Playable",

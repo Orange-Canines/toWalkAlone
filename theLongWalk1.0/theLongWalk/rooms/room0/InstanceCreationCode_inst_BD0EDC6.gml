@@ -1,1 +1,0 @@
-global.group[3] = self.id

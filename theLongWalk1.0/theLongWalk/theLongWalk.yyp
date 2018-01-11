@@ -138,7 +138,7 @@
             "Key": "173c5c4c-428e-4e2a-a616-b745f539f89c",
             "Value": {
                 "id": "d648bb7d-de57-4bab-9549-868f9196df7f",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rTutorial\\rTutorial.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -236,6 +236,14 @@
                 "id": "107851a2-43f5-44e8-bced-bda4a18c5d6e",
                 "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "30623c61-9d1e-4e00-b91c-e84059670d85",
+            "Value": {
+                "id": "6cfaaee1-52b2-4b6c-8177-a853b3870c8e",
+                "resourcePath": "sprites\\sSelectArrows\\sSelectArrows.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -459,6 +467,14 @@
             "Value": {
                 "id": "0d46925a-bd74-4e04-a3c4-735b8aafd7ea",
                 "resourcePath": "sprites\\sFirePit\\sFirePit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "62a05097-cbae-4cb0-b30f-75dab6c6361d",
+            "Value": {
+                "id": "71de649b-a159-415a-b9b8-5a7a6c47cd52",
+                "resourcePath": "sprites\\sCharacters\\sCharacters.yy",
                 "resourceType": "GMSprite"
             }
         },
