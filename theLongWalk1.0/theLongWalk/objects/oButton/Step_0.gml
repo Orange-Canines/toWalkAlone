@@ -1,9 +1,10 @@
 /// @description Check if Pressed
 
-if (mouse_check_button_released(mb_left) && position_meeting(mouse_x,mouse_y,self)){
+if (mouse_check_button_released(mb_left) && position_meeting(mouse_x,mouse_y,self))
 	clicked = true
-	sprite_index = sChatButtonsHighlight;
-	image_speed =0;
-	
-	}
 else clicked = false
+
+if (position_meeting(mouse_x,mouse_y,self)) 
+	sprite_index = sChatButtonsHighlight
+else 
+	sprite_index = sChatButtons
