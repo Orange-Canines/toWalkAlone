@@ -5,6 +5,6 @@ if (mouse_check_button_released(mb_left) && position_meeting(mouse_x,mouse_y,sel
 else clicked = false
 
 if (position_meeting(mouse_x,mouse_y,self)) 
-	sprite_index = sChatButtonsHighlight
+	hover = true
 else 
-	sprite_index = sChatButtons
+	hover = false
