@@ -12,7 +12,7 @@
         "81e93fd6-92b6-4bc0-9927-69db20d1257c",
         "0bc3c133-a06e-48a8-bbe6-30ef60eb9166",
         "09700ccc-1703-4782-b534-5e2189807cbb",
-        "042f405e-f9bd-4759-8032-4a94a07de3ff"
+        "1db6634e-0cdb-4449-ab9c-2901fea1ee31"
     ],
     "filterType": "GMSprite",
     "folderName": "Ground",

@@ -13,7 +13,7 @@ if
                     }
                     with(player)
                     {
-                        if (nextTo(oCampfire, 3)) {
+                        if (nextTo(oCampfire, 1)) {
 
                             repeat(2)
                             {
