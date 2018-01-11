@@ -6,6 +6,8 @@
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
 //if (CanTurn) {
+
+
 for (var i = 0; i < 4; i++) {
 	if (global.group[i] == self.id)
 		inGroup = true
@@ -92,29 +94,29 @@ if (inGroup) {
 	
 	for (i = 0; i < ds_list_size(buttonList); i++) {
 	buttonId = ds_list_find_value(buttonList, i)
-	if (buttonId.clicked) {
-		switch(buttonId.image_index){
-			case 0://talking
-			break;
-			case 1:
-				// trade
-			break;
-			case 2:
-				// shop
-			break;
-			case 3:
-				for(var i = 0; i < 4; i++) {
-					if (global.group[i] == noone) {
-						global.group[i] = self.id
-						deleteButtons()
-						break
+		if (buttonId.clicked) {
+			switch(buttonId.image_index){
+				case 0://talking
+				break;
+				case 1:
+					// trade
+				break;
+				case 2:
+					// shop
+				break;
+				case 3:
+					for(var i = 0; i < 4; i++) {
+						if (global.group[i] == noone) {
+							global.group[i] = self.id
+							deleteButtons()
+							break
+						}
 					}
-				}
-			break;
-			case 4:
-				// accept
-			break;
+				break;
+				case 4:
+					// accept
+				break;
+			}
 		}
 	}
-}
 }
