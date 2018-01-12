@@ -12,7 +12,8 @@
         "1c7b4730-d1c3-4a70-bc51-d8bd949a9651",
         "d993718e-0304-4970-9ac3-3e21d4815ea1",
         "eb769333-9d1f-462f-8e4c-2ea2b0ede70e",
-        "7bb107e1-82c0-479f-87fc-72fad91675f5"
+        "7bb107e1-82c0-479f-87fc-72fad91675f5",
+        "4445228f-73a3-4b0a-9780-f409cfb4da3e"
     ],
     "filterType": "GMObject",
     "folderName": "WorldObjects",

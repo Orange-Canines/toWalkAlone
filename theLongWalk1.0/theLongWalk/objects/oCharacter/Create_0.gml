@@ -5,6 +5,11 @@ maxHealth	 = Health;
 Stamina		 = choose (5,6,7)
 maxStamina	 = Stamina;
 
+LWeapon      = pointer_null;
+RWeapon		 = pointer_null;
+Talisman     = pointer_null;
+Equipment    = pointer_null;
+
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)
 Str     = choose (1,2,3,4,5)
