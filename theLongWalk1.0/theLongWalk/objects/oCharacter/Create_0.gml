@@ -4,6 +4,7 @@ Health		 = choose (7,6,5,8,9)
 maxHealth	 = Health; 
 Stamina		 = choose (5,6,7)
 maxStamina	 = Stamina;
+death        = false
 
 LWeapon      = pointer_null;
 RWeapon		 = pointer_null;
@@ -30,7 +31,7 @@ y       = tile.y
 alarm[0] = 1
 
 // Grouping
-inGroup      = false
+inGroup      = -1
 distFromTile = 210
 xSpace       = 110
 heightAndGap = 69
