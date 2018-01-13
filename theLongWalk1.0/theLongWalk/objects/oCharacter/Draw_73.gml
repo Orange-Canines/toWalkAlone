@@ -27,6 +27,7 @@ for (var i = 0; i < Health; i++) {
 for (var i = 0; i < Stamina; i++) {
 	draw_sprite(sStamina,0,startX + xGap + i*(blockWidth+xGap), startY + xGap + yGap + blockHeight)
 }
+draw_text(x,y,trapped)
 
 /* old debug
 draw_text(x-50,y-300, "Health: "  + string(Health))

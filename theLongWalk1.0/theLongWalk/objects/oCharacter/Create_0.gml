@@ -47,6 +47,8 @@ selected = false
 hasMoved = false
 dust     = false
 completedMove = true
+trapped  = false
+clearedQueue = false
 
 // health and stamina bar variables
 blockWidth  = 16

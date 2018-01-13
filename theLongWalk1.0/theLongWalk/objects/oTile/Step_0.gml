@@ -14,7 +14,7 @@ if (position_meeting(mouse_x,mouse_y,self) and
 if (global.selecting and position_meeting(mouse_x,mouse_y,self) and global.selected) {
 	if (!queued and contains != global.selected and 
 			playerMove and ds_queue_size(global.moveTileQue) < global.selected.numMoves) and
-			canBeQueued(self.id){
+			canBeQueued(self.id) and !global.selected.trapped{
 		ds_queue_enqueue(global.moveTileQue,self) 
 		queued    = true 
 		selected  = true
@@ -23,7 +23,6 @@ if (global.selecting and position_meeting(mouse_x,mouse_y,self) and global.selec
 
 // find all neighbors and recursivly travel through them setting the playerMove to true 
 // this marks the tiles for movement 
-
 if (contains != 0 and contains == global.selected and global.selecting) {
 	if (!ds_queue_empty(global.moveTileQue)) 
 		displayNeighbor(ds_queue_tail(global.moveTileQue))

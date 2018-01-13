@@ -11,10 +11,10 @@
 			inGroup = i
 	if (inGroup > -1) {
 		numMoves = Stamina
-		if (Stamina > 0 && !death){
+		if (Stamina > 0 && !death) {
 			if (global.startMove and id = global.selected) {
 				if (!ds_queue_empty(global.moveTileQue)) {
-					if (completedMove) {
+					if (completedMove && !trapped) {
 						tile.contains = 0
 						tile = ds_queue_dequeue(global.moveTileQue)
 						tile.selected = false
@@ -42,7 +42,10 @@
 		
 				// Subtract Stamina
 
-		
+				if (trapped && !clearedQueue) {
+					clearedQueue = true
+					clearQueue()	
+				}
 				// Do dust animation
 				if !dust {
 					Stamina--
@@ -81,13 +84,12 @@
 
 	// if your not in the group do this stuff
 	} else {
-		if (nextToSelected(oCharacter,1) and ds_queue_empty(global.moveTileQue)) {	
+		if (nextToSelected(oCharacter,1) and ds_queue_empty(global.moveTileQue))
 			// check if you need more buttons
 			createButtons()
-		} else {
+		else 
 			// delete all buttons in the list 
 			deleteButtons()
-		}
 	
 		for (i = 0; i < ds_list_size(buttonList); i++) {
 		buttonId = ds_list_find_value(buttonList, i)
@@ -135,6 +137,7 @@
 							i++
 						}
 			}
+			clearQueue()
 			global.selected = 0
 			instance_destroy()
 		}

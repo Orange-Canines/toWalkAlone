@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "2f45c31f-83a3-4b54-915c-ed41b373da4a",
+            "Value": {
+                "id": "ad941826-792a-40f4-b798-f0bc3cd9efc9",
+                "resourcePath": "sprites\\sBearTrap\\sBearTrap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2fbbd558-784a-4cda-9444-208c04890e1f",
             "Value": {
                 "id": "107851a2-43f5-44e8-bced-bda4a18c5d6e",
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "4ba8724c-316d-4966-93ba-9d99841f1594",
+            "Value": {
+                "id": "43424eed-13d5-4c29-b447-b4ec64b59237",
+                "resourcePath": "objects\\oSpear\\oSpear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4db15c06-4d75-4e8f-b952-fcfd7f3038a6",
             "Value": {
                 "id": "1e6be39b-ee4f-4459-9570-c970d26bb1fb",
@@ -519,6 +535,14 @@
             }
         },
         {
+            "Key": "678c708c-0226-41f1-b3fc-45f2fce81c4a",
+            "Value": {
+                "id": "3b7d537a-9833-47fd-88d3-e09cb9f9ca49",
+                "resourcePath": "sprites\\sSpear\\sSpear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68a4d1d8-f3ea-4a6b-98fa-9584ad06dbdd",
             "Value": {
                 "id": "e2c2c945-a6c0-48c3-8b92-5d1ec8f0e47a",
@@ -532,6 +556,14 @@
                 "id": "1e4d43fe-4e0b-4231-9a6b-4d8cdf7c3940",
                 "resourcePath": "objects\\oButton\\oButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6b38e063-8034-4e97-a6b4-d5e653c749ea",
+            "Value": {
+                "id": "88e8c194-d0a1-44e4-bb3f-4a521f2c2703",
+                "resourcePath": "scripts\\clearQueue\\clearQueue.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -748,6 +780,14 @@
                 "id": "f4efcd23-a72a-47b0-8bc9-6f932a54fb9a",
                 "resourcePath": "sprites\\sKnight1\\sKnight1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9349798e-151f-4156-90b6-6ce6070eb173",
+            "Value": {
+                "id": "b37df57c-7909-4237-9727-637cb999ed16",
+                "resourcePath": "objects\\oBearTrap\\oBearTrap.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1143,6 +1183,14 @@
             }
         },
         {
+            "Key": "e723c058-b724-4efc-93df-7b4a615f14e4",
+            "Value": {
+                "id": "664fdce8-06b4-4834-aed5-661c6db3dce7",
+                "resourcePath": "views\\e723c058-b724-4efc-93df-7b4a615f14e4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "eabca75b-ef6f-4078-92a5-24f62acd1d8b",
             "Value": {
                 "id": "1d624140-33af-4ff6-832a-4f504c6d667b",
@@ -1286,7 +1334,8 @@
         "0a8118a0-423c-4203-87df-8fae310a9beb",
         "c4c35f44-0fbb-41ea-9a40-9dc86b9fe78a",
         "717cc34d-3215-4324-a77d-8f804131bc93",
-        "4db15c06-4d75-4e8f-b952-fcfd7f3038a6"
+        "4db15c06-4d75-4e8f-b952-fcfd7f3038a6",
+        "6b38e063-8034-4e97-a6b4-d5e653c749ea"
     ],
     "tutorial": ""
 }

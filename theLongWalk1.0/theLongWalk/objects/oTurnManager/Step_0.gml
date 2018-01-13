@@ -8,6 +8,8 @@ if keyboard_check_released(ord("N")) {
         if (global.group[i] != noone) {
             var player = global.group[i] 
             with(player) {
+				// untrap players
+				player.trapped = false
 				// strickly end turn regen!
 				repeat(2)
 					if (player.Stamina < player.maxStamina)
@@ -23,3 +25,4 @@ if keyboard_check_released(ord("N")) {
 			}
         }
 }
+
