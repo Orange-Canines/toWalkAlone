@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "194bc0e8-d355-4f70-9a48-2006fcb3f7fb",
+            "Value": {
+                "id": "64fbd46e-180e-4189-8279-1e63e0ff1ddb",
+                "resourcePath": "objects\\oPlayable\\oPlayable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1aae5340-57cf-4373-b783-898b19ece8cd",
             "Value": {
                 "id": "b239311c-80e4-44ca-a1d6-e3b8547c5cbc",

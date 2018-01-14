@@ -1,7 +1,7 @@
 /// @description Creation Event
 event_inherited();
 
-TargettedHero = "Null"
+targetChar   = noone
 
 // Stat
 Health		 = choose (7,6,5,8,9)

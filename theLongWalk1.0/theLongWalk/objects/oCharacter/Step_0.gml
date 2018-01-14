@@ -5,7 +5,7 @@
 // if the most recent dequeed tile has already been delt with 
 // set the previous tiles contains variable back to 0 
 // dequeue the next on the queue and start moving too it
-//if (global.playerTurn) {
+if (global.playerTurn) {
 	for (var i = 0; i < 4; i++) 
 		if (global.group[i] == self.id)
 			inGroup = i
@@ -142,4 +142,4 @@
 			instance_destroy()
 		}
 	}
-//}
+}

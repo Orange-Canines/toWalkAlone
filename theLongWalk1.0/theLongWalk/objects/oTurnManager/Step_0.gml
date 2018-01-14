@@ -2,7 +2,7 @@
 // Add Stamina Back
 if keyboard_check_released(ord("N")) {
     turnCounter++
-	
+	global.playerTurn = !global.playerTurn
     //Get list of all characters
     for (var i = 0; i < 4; i++)
         if (global.group[i] != noone) {
@@ -26,3 +26,11 @@ if keyboard_check_released(ord("N")) {
         }
 }
 
+xx = display_mouse_get_x()
+yy = display_mouse_get_y()
+
+if (xx > ((camera.ideal_width/2)-97) && xx < ((camera.ideal_width/2)+97) &&
+	yy >  (camera.ideal_height-200)  && yy <  (camera.ideal_height-116))
+	index = 1
+else 
+	index = 0

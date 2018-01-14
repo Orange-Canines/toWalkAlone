@@ -20,17 +20,15 @@ draw_rectangle_color(startX,startY,
 draw_set_alpha(1)
 
 // draw health blocks 
-for (var i = 0; i < Health; i++) {
+for (var i = 0; i < Health; i++) 
 	draw_sprite(sHealth,0,startX + xGap + i*(blockWidth+xGap), startY + xGap)
-}
+
 // draw stamina blocks
-for (var i = 0; i < Stamina; i++) {
+for (var i = 0; i < Stamina; i++) 
 	draw_sprite(sStamina,0,startX + xGap + i*(blockWidth+xGap), startY + xGap + yGap + blockHeight)
-}
 
 
-
-draw_text(x-50,y-300, "Target: "  + string((TargettedHero.Name)))
+draw_text(x-50,y-300, "Target: "  + string((targetChar.Name)))
 /* old debug
 draw_text(x-50,y-300, "Health: "  + string(Health))
 draw_text(x-50,y-320, "Stamina: " + string(Stamina))
