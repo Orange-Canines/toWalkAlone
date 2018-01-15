@@ -11,4 +11,4 @@ currentX    = 0
 targetX     = 0
 arrowIndex  = 0
 imageIndex  = 0
-page        = 1;
+page        = 1; // 1 - Equipment 
