@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0bccca1f-f026-4e52-b836-ecdbac6d2e3b",
+            "Value": {
+                "id": "d07b17a2-e18f-4a62-8d35-e06fc4513b9a",
+                "resourcePath": "sprites\\sItem1Thumb\\sItem1Thumb.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f22ef14-34a8-4e23-88c7-d7d8088b8421",
             "Value": {
                 "id": "55bb9ddd-acc4-4d51-86f9-13a0fe6132cf",
