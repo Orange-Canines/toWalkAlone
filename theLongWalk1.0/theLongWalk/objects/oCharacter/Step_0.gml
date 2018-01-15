@@ -56,7 +56,7 @@ if (global.playerTurn) {
 						dustId.sprite_index = sSplash
 						var mydamage = instance_create_depth(x,y,depth,oDamage_Text)
 						mydamage.myText = "-1"
-						Health -= irandom(1)				
+						Health -= 1				
 					}
 				}
 				dust = true
@@ -66,13 +66,12 @@ if (global.playerTurn) {
 		// if you start the move queue you are no longer able to select more tiles to queue
 		if (global.startMove)
 			global.selecting = false
-
 		// selects the character if you click it
 		if (mouse_check_button_released(mb_left)) 
-			if (position_meeting(mouse_x,mouse_y,self) and ds_queue_empty(global.moveTileQue))
+			if (position_meeting(mouse_x,mouse_y,self) and ds_queue_empty(global.moveTileQue) and !global.startMove)
 				global.selected = self.id
 		if (mouse_check_button_pressed(mb_left)) 
-			if (!position_meeting(mouse_x,mouse_y,oCharacter) && !position_meeting(mouse_x,mouse_y,oButton))
+			if (!position_meeting(mouse_x,mouse_y,oCharacter) and !position_meeting(mouse_x,mouse_y,oButton) and !global.startMove)
 				global.selected = 0
 
 		// if this character is the selected character set the variable so it knows 
