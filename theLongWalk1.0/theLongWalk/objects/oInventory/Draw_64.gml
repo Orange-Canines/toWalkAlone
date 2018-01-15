@@ -45,5 +45,16 @@ if 	(open != false){
 	draw_text(115,257, string(Last_Sel_hero.Wis))
 	draw_text(115,292, string(Last_Sel_hero.Int))
 	draw_text(115,327, string(Last_Sel_hero.Lck))
+	
+	// Draw Equipment LWeapon   RWeapon		Talisman   Armor    
+	draw_text(115,527,"Equipment- L Weapon "+ string(Last_Sel_hero.Equipment[0]))
+	if (Last_Sel_hero.Equipment[0] == "RustySword")
+		draw_sprite(sItem1,-1,50,500)
+	draw_text(115,627,"Equipment- R Weapon "+ string(Last_Sel_hero.Equipment[1]))
+	draw_text(115,727,"Equipment- Tailismen"+ string(Last_Sel_hero.Equipment[2]))
+	draw_text(115,827,"Equipment- Armor    "+ string(Last_Sel_hero.Equipment[3]))
+
+
+
 }
 

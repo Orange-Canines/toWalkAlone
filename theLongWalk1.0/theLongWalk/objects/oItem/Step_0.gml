@@ -44,7 +44,8 @@ for (i = 0; i < ds_list_size(buttonList); i++) {
 	if (buttonId.clicked) {
 		switch(buttonId.image_index){
 			case 0:
-				global.selected.RWeapon ="RustySword";
+				global.selected.Equipment[0] ="RustySword";
+				global.selected.Equipment[1] ="RustySword";
 							// delete all buttons in the list 
 				for(i = 0; i < ds_list_size(buttonList); i++) {	
 					instance_destroy(ds_list_find_value(buttonList, i))

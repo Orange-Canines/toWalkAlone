@@ -6,10 +6,8 @@ Stamina		 = choose (5,6,7)
 maxStamina	 = Stamina;
 death        = false
 
-LWeapon      = pointer_null;
-RWeapon		 = pointer_null;
-Talisman     = pointer_null;
-Equipment    = pointer_null;
+// --------------------LWeapon   RWeapon		Talisman   Armor       
+Equipment= array("RustySword","RustySword",pointer_null,pointer_null)
 
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)
