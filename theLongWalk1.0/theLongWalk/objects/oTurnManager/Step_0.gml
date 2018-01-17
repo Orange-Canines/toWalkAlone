@@ -2,7 +2,7 @@
 // Add Stamina Back
 if keyboard_check_released(ord("N")) {
     turnCounter++
-	global.playerTurn = !global.playerTurn
+	global.playerTurn = false
     //Get list of all characters
     for (var i = 0; i < 4; i++)
         if (global.group[i] != noone) {
@@ -24,6 +24,23 @@ if keyboard_check_released(ord("N")) {
                     }
 			}
         }
+}
+if (!global.playerTurn && !ds_list_empty(global.enemList)) {
+	for(var i = 0; i < ds_list_size(global.enemList); i++) {
+		var enemy = ds_list_find_value(global.enemList,i)
+		if (enemy.endTurn) 
+			finished++
+	}
+	if (finished == ds_list_size(global.enemList)) {
+		global.playerTurn = true
+		turnCounter++
+		for(var i = 0; i < ds_list_size(global.enemList); i++) {
+			var enemy = ds_list_find_value(global.enemList,i)
+			enemy.endTurn = false 
+			enemy.moved   = false
+		}
+	}
+	finished = 0
 }
 
 xx = display_mouse_get_x()

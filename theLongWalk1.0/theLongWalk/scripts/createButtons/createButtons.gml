@@ -1,5 +1,5 @@
 if (ds_list_size(buttonList) < actions) {
-		
+	drawing = true
 	// create a new button and add it to the button list
 	var buttonId = instance_create_layer(x,y,"Utility", oButton)
 	ds_list_add(buttonList, buttonId)

@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "184528f7-7832-4462-b906-bd24b437512c",
+            "Value": {
+                "id": "f8be5b87-aa4e-4814-8bd5-0c328a75bae1",
+                "resourcePath": "scripts\\queueDir\\queueDir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "194bc0e8-d355-4f70-9a48-2006fcb3f7fb",
             "Value": {
                 "id": "64fbd46e-180e-4189-8279-1e63e0ff1ddb",
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "af9e5dda-c217-4db1-967b-d57aa34f0198",
+            "Value": {
+                "id": "49d6ce47-8315-44df-b746-fea2e3909679",
+                "resourcePath": "scripts\\canBeQueuedEnemy\\canBeQueuedEnemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "afa71827-9095-42c0-b570-dab0da0bcc68",
             "Value": {
                 "id": "76e37ac6-394a-463c-a863-2b3e5f48f0a1",
@@ -1351,7 +1367,9 @@
         "c4c35f44-0fbb-41ea-9a40-9dc86b9fe78a",
         "717cc34d-3215-4324-a77d-8f804131bc93",
         "4db15c06-4d75-4e8f-b952-fcfd7f3038a6",
-        "6b38e063-8034-4e97-a6b4-d5e653c749ea"
+        "6b38e063-8034-4e97-a6b4-d5e653c749ea",
+        "184528f7-7832-4462-b906-bd24b437512c",
+        "af9e5dda-c217-4db1-967b-d57aa34f0198"
     ],
     "tutorial": ""
 }

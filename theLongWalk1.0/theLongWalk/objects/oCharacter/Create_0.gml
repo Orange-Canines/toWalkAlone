@@ -24,6 +24,7 @@ Class   = "None"
 tile    = instance_nearest(x,y,oTile)
 x       = tile.x
 y       = tile.y
+tile.contains = self.id
 
 // set alarm to add to charlist
 alarm[0] = 1
@@ -56,6 +57,7 @@ yGap        = 4
 disFromChar = 36
 startY      = y-(sprite_height+disFromChar)
 endY        = startY+(blockHeight*2)+(yGap*3)
+drawing = false
 
 if (Health >= Stamina) {
 	startX = x-((blockWidth*Health)/2)
