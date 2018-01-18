@@ -4,6 +4,7 @@ selected   = false
 queued     = false
 enemyMove  = false
 playerMove = false
+partyDeath = false
 characterSelected = false
 containsDecor     = array(noone,noone,noone)
 

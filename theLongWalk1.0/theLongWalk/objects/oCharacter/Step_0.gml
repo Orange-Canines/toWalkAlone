@@ -48,7 +48,10 @@ if (death) {
 	image_alpha -= .02
 	if (image_alpha < .1) {
 		if (inGroup > -1) {
+			tile.partyDeath = true 
 			global.group[inGroup] = noone
+			var turnManager = instance_nearest(x,y,oTurnManager)
+			turnManager.partyDeath = true
 			if (inGroup != 3) {
 				for (var i = 0; i < 3; i++)
 					if (global.group[i] == noone)
@@ -60,6 +63,8 @@ if (death) {
 		} 
 		if (object_is_ancestor(object_index,oEnemy))
 			ds_list_delete(global.enemList, ds_list_find_index(global.enemList, self))
+		else if (object_is_ancestor(object_index,oPlayable))
+			ds_list_delete(global.charList, ds_list_find_index(global.charList, self))
 		clearQueue()
 		global.selected = 0
 		instance_destroy()

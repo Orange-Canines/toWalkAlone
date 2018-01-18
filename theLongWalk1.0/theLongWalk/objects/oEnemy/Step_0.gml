@@ -6,29 +6,10 @@ if (!global.playerTurn) {
 		targetChar = instance_nearest(x,y,oCharacter)
 	else 
 		targetChar = noone
-	if (nextTo(oPlayable,6) && !moved) {
-		if (x > targetChar.x) { // move left
-			if (y > targetChar.y) // move left and up
-				queueDir(5,tile)
-			else if (y < targetChar.y) // move left and down
-				queueDir(4,tile)
-			else // move left 
-				queueDir(choose(4,5),tile)
-		} else if (x < targetChar.x){ // move right
-			if (y > targetChar.y) // move right and up
-				queueDir(1,tile)
-			else if (y < targetChar.y) // move right and down
-				queueDir(2,tile)
-			else // move right
-				queueDir(choose(1,2),tile)
-		} else { // move up or down
-			if (y > targetChar.y) // move up
-				queueDir(0,tile)
-			else // move down
-				queueDir(3,tile)
-		}
+	if (!moved && nextTo(oPlayable,distanceToTarget)) {
+		queueChase()
 		moved = true
-	} else if (!moved) {
+	} else if (!moved) { // move almost randomly
 		queueDir(dir,tile)	
 		dir = ((dir+3)%6)
 		moved = true

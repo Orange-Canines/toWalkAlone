@@ -4,7 +4,7 @@ if keyboard_check_released(ord("N")) {
     turnCounter++
 	global.playerTurn = false
     //Get list of all characters
-    for (var i = 0; i < 4; i++)
+    for (var i = 0; i < maxPartySize; i++)
         if (global.group[i] != noone) {
             var player = global.group[i] 
             with(player) {
@@ -25,9 +25,22 @@ if keyboard_check_released(ord("N")) {
 			}
         }
 }
+// check if the last party memeber died and end the game
+if (partyDeath) {
+	var gameOver = true
+	for(var i = 0; i < maxPartySize; i++) {
+		if (global.group[i] != noone)
+			gameOver = false
+	}
+	if (gameOver) {
+		game_end()	
+	} else // stop checking death until another player dies
+		partyDeath = false
+}
 if (!global.playerTurn && !ds_list_empty(global.enemList)) {
 	for(var i = 0; i < ds_list_size(global.enemList); i++) {
 		var enemy = ds_list_find_value(global.enemList,i)
+		enemy.trapped = false
 		if (enemy.endTurn) 
 			finished++
 	}
@@ -41,6 +54,9 @@ if (!global.playerTurn && !ds_list_empty(global.enemList)) {
 		}
 	}
 	finished = 0
+} else if (!global.playerTurn && ds_list_empty(global.enemList)){
+		global.playerTurn = true
+		turnCounter++
 }
 
 xx = display_mouse_get_x()

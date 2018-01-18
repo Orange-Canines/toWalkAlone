@@ -57,7 +57,7 @@ yGap        = 4
 disFromChar = 36
 startY      = y-(sprite_height+disFromChar)
 endY        = startY+(blockHeight*2)+(yGap*3)
-drawing = false
+drawing     = false
 
 if (Health >= Stamina) {
 	startX = x-((blockWidth*Health)/2)

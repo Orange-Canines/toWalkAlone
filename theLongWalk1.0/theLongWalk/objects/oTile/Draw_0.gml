@@ -8,3 +8,5 @@ if enemyMove
 	draw_sprite(sEnemyMove, 0, x, y)
 if characterSelected 
 	draw_sprite(sSelector, 0, x, y)
+if partyDeath
+	draw_sprite(sDeathTile, 0, x, y)
