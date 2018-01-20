@@ -1,14 +1,15 @@
-/// @description Initialize campfire variables
+/// @description Initialize Item variables
 event_inherited();
 
-image_xscale = 1/4;
-image_yscale = 1/4;
-
-itemID       = "RustySword";
+itemID       = "RustySword"
+myItem       = irandom(4)
+rarity       = irandom(4)
+inspecting   = false
 distFromTile = 210
 xGap         = 110
 heightAndGap = 69
 buttonIndex  = 0
 buttonList   = ds_list_create()
-actions      = 1
-actionSprite = array(false,false,false,false,false)
+actions      = 2
+actionSprite = array(false,false,false,false,true,false,false,false,false,false,true)
+image_index = rarity

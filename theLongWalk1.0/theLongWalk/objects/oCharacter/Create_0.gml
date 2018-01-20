@@ -5,10 +5,10 @@ maxHealth	 = Health;
 Stamina		 = choose (5,6,7)
 maxStamina	 = Stamina;
 death        = false
+currency     = irandom_range(0,999)
 
 // --------------------LWeapon   RWeapon		Talisman   Armor       
-Equipment= array("RustySword","RustySword",pointer_null,pointer_null)
-
+Equipment = array(noone,noone,noone,noone)
 Vit     = choose (1,2,3,4,5)
 End     = choose (1,2,3,4,5)
 Str     = choose (1,2,3,4,5)

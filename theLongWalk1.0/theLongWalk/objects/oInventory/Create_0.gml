@@ -6,6 +6,7 @@ position[1] = virtual_key_add(12,360,146,146,ord("2"))
 position[2] = virtual_key_add(12,520,146,146,ord("3"))
 position[3] = virtual_key_add(12,680,146,146,ord("4"))
 position[4] = virtual_key_add(12,680,146,146,ord("5"))
+seperation  = 100
 open        = false
 currentX    = 0
 targetX     = 0

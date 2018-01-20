@@ -40,7 +40,6 @@ if (partyDeath) {
 if (!global.playerTurn && !ds_list_empty(global.enemList)) {
 	for(var i = 0; i < ds_list_size(global.enemList); i++) {
 		var enemy = ds_list_find_value(global.enemList,i)
-		enemy.trapped = false
 		if (enemy.endTurn) 
 			finished++
 	}
@@ -51,6 +50,11 @@ if (!global.playerTurn && !ds_list_empty(global.enemList)) {
 			var enemy = ds_list_find_value(global.enemList,i)
 			enemy.endTurn = false 
 			enemy.moved   = false
+			enemy.trapped = false
+			enemy.stopQueing = false
+			repeat(2)
+				if (enemy.Stamina < enemy.maxStamina)
+					enemy.Stamina++
 		}
 	}
 	finished = 0

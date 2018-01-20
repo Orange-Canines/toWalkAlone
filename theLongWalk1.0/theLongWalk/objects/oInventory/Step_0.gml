@@ -12,6 +12,8 @@ if keyboard_check_released(vk_enter){
 	}
 }
 
+display_set_gui_size(display_get_gui_width(),display_get_gui_height())
+
 // Keyboard checks ... possible revamp???
 if (!global.selecting and !global.startMove) {
 	if keyboard_check_released(ord("1")) and global.group[0] != 0

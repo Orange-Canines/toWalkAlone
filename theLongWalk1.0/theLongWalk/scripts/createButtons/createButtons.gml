@@ -9,7 +9,7 @@ if (ds_list_size(buttonList) < actions) {
 	buttonId.y = buttonId.y-distFromTile+(heightAndGap*(ds_list_size(buttonList)-1))
 		
 	// give the correct image index to each button
-	for(var i = buttonIndex; i < 5; i++) {
+	for(var i = buttonIndex; i < 11; i++) {
 		if(actionSprite[i]) {
 			buttonId.image_index = i
 			buttonIndex = i+1

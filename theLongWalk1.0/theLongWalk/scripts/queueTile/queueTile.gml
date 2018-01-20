@@ -6,18 +6,21 @@ var nextTile = ds_list_find_value(currentTile.list,dir)
 if (nextTile != noone and !nextTile.queued and nextTile.contains == 0 and canBeQueuedEnemy(nextTile)) {
 	ds_queue_enqueue(enemyTileQue,nextTile)
 	nextTile.enemyMove = true
-	nextTile.queued = true
-
+	nextTile.queued    = true
 } else {
-	while(true) {	
+	var count = 0
+	while(count < 6) {	
+		count++
 		dir = ((dir+1)%6)
 		nextTile = ds_list_find_value(currentTile.list,dir)
 		if(nextTile != noone and !nextTile.queued and nextTile.contains == 0 and 
 			canBeQueuedEnemy(nextTile)) {
 			ds_queue_enqueue(enemyTileQue,nextTile)
 			nextTile.enemyMove = true
-			nextTile.queued = true
+			nextTile.queued    = true
 			break
 		}	
 	}
+	if (count == 6)
+		stopQueing = true
 }

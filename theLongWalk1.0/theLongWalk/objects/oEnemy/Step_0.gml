@@ -2,12 +2,21 @@
 event_inherited()
 
 if (!global.playerTurn) {
-	if (object_exists(oCharacter))
-		targetChar = instance_nearest(x,y,oCharacter)
+	if (object_exists(oPlayable))
+		targetChar = instance_nearest(x,y,oPlayable)
 	else 
 		targetChar = noone
 	if (!moved && nextTo(oPlayable,distanceToTarget)) {
-		queueChase()
+		for (var i = 0; i < Stamina; i++) {
+			if (nextTo(oPlayable, i+1)) {
+				chaseDist = i
+				break
+			}
+			else if (i+1 == Stamina)
+				chaseDist = Stamina
+		}
+			// move distance
+			queueChase()
 		moved = true
 	} else if (!moved) { // move almost randomly
 		queueDir(dir,tile)	
@@ -15,7 +24,7 @@ if (!global.playerTurn) {
 		moved = true
 	}
 		numMoves = Stamina
-		if (Stamina > 0 && !death) {
+		if (Stamina >= 0 && !death) {
 			if (enemyStartMove) {
 				if (!ds_queue_empty(enemyTileQue)) {
 					if (completedMove && !trapped) {
@@ -29,13 +38,13 @@ if (!global.playerTurn) {
 					// if the queue is empty startMove is false
 				} else if(completedMove && moved) {
 					enemyStartMove = false
-					Stamina = maxStamina
 					endTurn = true
 					// end enemies turn possible boolean array for completed move?
 					// check if every enemy in the room has completed their move 
 					// if true then endEnemyTurn() script
 				}
 			}
+			
 			// this checks if the most recent dequeued tile has been moved too if not
 			// it will move to it 
 			if (!completedMove) {
@@ -60,7 +69,7 @@ if (!global.playerTurn) {
 				}
 				// Do dust animation
 				if !dust {
-					//Stamina--
+					Stamina--
 					var dustId = instance_create_layer(x,y,"CharactersObjects",oDust)
 					if (tile.object_index == oGround1 || tile.object_index == oBridge) {
 						dustId.sprite_index = sDust
