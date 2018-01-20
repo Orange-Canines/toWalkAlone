@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0b59db9a-58a3-45b5-a418-803188695673",
+            "Value": {
+                "id": "5fc8b361-b1b6-42c1-8b70-6e2fb9dc79af",
+                "resourcePath": "sprites\\sPartyPlus\\sPartyPlus.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0bc3c133-a06e-48a8-bbe6-30ef60eb9166",
             "Value": {
                 "id": "00e59f56-4f7d-4867-ae6d-5fdbe29a72be",
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "a43c63c0-6080-4de1-a071-314620f2f7c3",
+            "Value": {
+                "id": "f399cdc2-a528-4692-b5c2-e9596874fdc3",
+                "resourcePath": "sprites\\sInvIcon\\sInvIcon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a58b441b-4e40-45e4-a43e-749befb24524",
             "Value": {
                 "id": "79059821-a1f8-45f2-83cc-1f6e531f5272",
@@ -1292,6 +1308,14 @@
                 "id": "7bb738d1-cc08-44b5-a0bb-a218520e5afe",
                 "resourcePath": "views\\ed3e0ca6-b005-4472-9e2e-fe8a7ef8ac1d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ed79ccff-c3bf-42e7-8883-f9c58e22f867",
+            "Value": {
+                "id": "7421395e-d144-4ca6-be3e-b3fe84b45764",
+                "resourcePath": "sprites\\sLevelUpColors\\sLevelUpColors.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

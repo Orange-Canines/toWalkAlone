@@ -1,6 +1,7 @@
 // Handle enemies and non grouped playable characters interactions
 // if not in the group enemy and not grouped players do this
 if (inGroup == -1) {
+	currentStats = array(Vit,End,Str,Dex,Wis,Int,Lck)
 	if (nextToSelected(oCharacter,1) and ds_queue_empty(global.moveTileQue))
 		// check if you need more buttons
 		createButtons()

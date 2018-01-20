@@ -16,10 +16,9 @@ Dex     = choose (1,2,3,4,5)
 Wis     = choose (1,2,3,4,5)
 Int     = choose (1,2,3,4,5)
 Lck     = choose (1,2,3,4,5)
-Name    = choose ("Blank","Rex", "Titus", "Tiberious", 
-				  "Kyle", "Zach", "Sam", "Vlad", "Bosimer", 
-				  "Ceaser", "Cyrus", "Ventus")
-Class   = "None"
+currentStats = array(Vit,End,Str,Dex,Wis,Int,Lck)
+maxValues = array(10,10,10,10,10,10,10)
+
 // tile the character is standing on
 tile    = instance_nearest(x,y,oTile)
 x       = tile.x
@@ -36,8 +35,8 @@ xSpace       = 110
 heightAndGap = 69
 buttonIndex  = 0
 buttonList   = ds_list_create()
-actions      = 1
-actionSprite = array(false,false,false,true,false)
+actions      = 0
+actionSprite = array(false,false,false,false,false,false,false,false,false,false,false)
 
 // Movement variables
 numMoves = Stamina
@@ -46,8 +45,8 @@ selected = false
 hasMoved = false
 dust     = false
 completedMove = true
-trapped  = false
-clearedQueue = false
+trapped       = false
+clearedQueue  = false
 
 // health and stamina bar variables
 blockWidth  = 16

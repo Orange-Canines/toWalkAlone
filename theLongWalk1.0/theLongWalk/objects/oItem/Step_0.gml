@@ -14,13 +14,18 @@ for (i = 0; i < ds_list_size(buttonList); i++) {
 	if (buttonId.clicked) {
 		switch(buttonId.image_index){
 			case 4: // accept but into inventory
-				for (var i = 0; i < 3/*global.selected.bagSize*/; i++) 
+			var fullInventory = true
+				for (var i = 0; i < global.selected.bagSize; i++) 
 					if (global.selected.inventory[i] == noone) {
-						global.selected.inventory[i] = itemID
-						global.selected.Equipment[i] = myItem	
+						global.selected.inventory[i] = myItem
+						fullInventory = false	
 					}
-				deleteButtons()
-				instance_destroy()
+				if (fullInventory) {
+						// draw narrotor text about full
+				} else {
+					deleteButtons()
+					instance_destroy()
+				}
 			break;
 			case 10: // inspect draw info
 				inspecting = !inspecting
