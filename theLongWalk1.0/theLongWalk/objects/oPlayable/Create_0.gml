@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-inventory = array(1,2,3)
+inventory = array(noone,noone,noone)
 Equipment = array(1,2,3,4)
 bagSize   = 2
 actions   = 1

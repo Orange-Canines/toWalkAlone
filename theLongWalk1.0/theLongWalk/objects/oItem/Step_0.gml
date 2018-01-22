@@ -8,7 +8,6 @@ else
 	deleteButtons()
 	
 /// check for buttons 
-
 for (i = 0; i < ds_list_size(buttonList); i++) {
 	buttonId = ds_list_find_value(buttonList, i)
 	if (buttonId.clicked) {
@@ -19,6 +18,7 @@ for (i = 0; i < ds_list_size(buttonList); i++) {
 					if (global.selected.inventory[i] == noone) {
 						global.selected.inventory[i] = myItem
 						fullInventory = false	
+						break
 					}
 				if (fullInventory) {
 						// draw narrotor text about full

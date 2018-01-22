@@ -18,7 +18,7 @@ Int     = choose (1,2,3,4,5)
 Lck     = choose (1,2,3,4,5)
 currentStats = array(Vit,End,Str,Dex,Wis,Int,Lck)
 maxValues = array(10,10,10,10,10,10,10)
-bagSize = 1
+bagSize = 0
 // tile the character is standing on
 tile    = instance_nearest(x,y,oTile)
 x       = tile.x

@@ -40,8 +40,6 @@ if (global.playerTurn) {
 				tile.contains = self.id
 				tile.queued   = false
 				completedMove = true
-		
-				// Subtract Stamina
 
 				if (trapped && !clearedQueue) {
 					clearedQueue = true

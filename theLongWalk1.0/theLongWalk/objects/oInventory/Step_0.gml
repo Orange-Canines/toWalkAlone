@@ -170,7 +170,9 @@ if (imageIndex == 1) {
 	// draw inventory buttons
 	for (var i = 0; i < lastSelectedChar.bagSize; i++) {
 		inventoryButtons[i].visible = true
-		inventoryButtons[i].image_index = lastSelectedChar.inventory[i]
+		if (lastSelectedChar.inventory[i] != noone)
+			inventoryButtons[i].image_index = lastSelectedChar.inventory[i]
+		else inventoryButtons[i].image_index = image_number - 1
 		if (inventoryButtons[i].clicked) {
 			imageIndex = 2
 			itemToDisplay = lastSelectedChar.inventory[i]
