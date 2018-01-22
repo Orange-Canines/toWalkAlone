@@ -19,10 +19,10 @@ if (follow != 0 and follow != noone) {
 
 // stops the camera movement when the difference/10 is less than 1 
 // continues movement if its greater than 1
-if abs((x2-x)/10) >= 1
-	x +=(x2-x)/10
-if abs((y2-y)/10) >= 1
-	y +=(y2-y)/10
+if abs((x2-x)/6) >= 1
+	x +=(x2-x)/6
+if abs((y2-y)/6) >= 1
+	y +=(y2-y)/6
 
 // not sure but cameras and matrix stuff
 var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0)

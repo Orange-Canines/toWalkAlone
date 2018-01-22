@@ -2,7 +2,7 @@
 // if not in the group enemy and not grouped players do this
 if (inGroup == -1) {
 	currentStats = array(Vit,End,Str,Dex,Wis,Int,Lck)
-	if (nextToSelected(oCharacter,1) and ds_queue_empty(global.moveTileQue))
+	if (nextToSelected(oPlayable,1) and ds_queue_empty(global.moveTileQue))
 		// check if you need more buttons
 		createButtons()
 	else 
@@ -71,3 +71,20 @@ if (death) {
 		instance_destroy()
 	}
 }
+
+// if you start the move queue you are no longer able to select more tiles to queue
+if (global.startMove)
+	global.selecting = false
+// selects the character if you click it
+if (mouse_check_button_released(mb_left)) 
+	if (position_meeting(mouse_x,mouse_y,self) and ds_queue_empty(global.moveTileQue) and !global.startMove)
+		global.selected = self.id
+if (mouse_check_button_pressed(mb_left)) 
+	if (!position_meeting(mouse_x,mouse_y,oCharacter) and !position_meeting(mouse_x,mouse_y,oButton) and !global.startMove)
+		global.selected = 0
+
+// if this character is the selected character set the variable so it knows 
+if (self.id = global.selected){
+	selected = true
+} else
+	selected = false

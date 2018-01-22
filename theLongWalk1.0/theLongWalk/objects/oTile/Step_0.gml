@@ -1,8 +1,8 @@
 /// @description Day in the life of a tile
 
 // check to see if you want to selected tiles to queue
-if (position_meeting(mouse_x,mouse_y,self) and
-		contains == global.selected and 
+if (position_meeting(mouse_x,mouse_y,self) and global.selected != 0 and
+		contains == global.selected and global.selected.inGroup > -1 and
 		mouse_check_button(mb_left))
 	global.selecting = true
 

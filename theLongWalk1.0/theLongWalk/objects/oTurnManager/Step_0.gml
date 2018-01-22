@@ -1,30 +1,40 @@
 /// @description Deals with ending your turn
 // Add Stamina Back
-if keyboard_check_released(ord("N")) {
-    turnCounter++
-	global.playerTurn = false
-    //Get list of all characters
-    for (var i = 0; i < maxPartySize; i++)
-        if (global.group[i] != noone) {
-            var player = global.group[i] 
-            with(player) {
-				// untrap players
-				player.trapped = false
-				// strickly end turn regen!
-				repeat(2)
-					if (player.Stamina < player.maxStamina)
-						player.Stamina++
-				// Campfire Regen
-                if (nextTo(oCampfire, 1)) 
-					repeat(2) {
-                        if (player.Stamina < player.maxStamina)
-                            player.Stamina++
-                        if (player.Health < player.maxHealth)
-							player.Health++    
-                    }
-			}
-        }
-}
+x = (camera.ideal_width/2)-97
+y = camera.ideal_height-200
+xx = window_mouse_get_x()
+yy = window_mouse_get_y()
+
+if (position_meeting(xx,yy,self)) {
+	image_index = 1	
+	if (mouse_check_button_pressed(mb_left)) {
+	    turnCounter++
+		global.playerTurn = false
+	    //Get list of all characters
+	    for (var i = 0; i < maxPartySize; i++)
+	        if (global.group[i] != noone) {
+	            var player = global.group[i] 
+	            with(player) {
+					// untrap players
+					player.trapped = false
+					// strickly end turn regen!
+					repeat(2)
+						if (player.Stamina < player.maxStamina)
+							player.Stamina++
+					// Campfire Regen
+	                if (nextTo(oCampfire, 1)) 
+						repeat(2) {
+	                        if (player.Stamina < player.maxStamina)
+	                            player.Stamina++
+	                        if (player.Health < player.maxHealth)
+								player.Health++    
+	                    }
+				}
+	        }
+	}
+} else
+	image_index = 0
+
 // check if the last party memeber died and end the game
 if (partyDeath) {
 	var gameOver = true

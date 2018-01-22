@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-draw_self()
+/// @description Draw end to overlap game objects
+if (!guiButton)
+	draw_self()

@@ -7,4 +7,4 @@ heightAndGap = 69
 buttonIndex  = 0
 buttonList   = ds_list_create()
 actions      = 1
-actionSprite = array(false,false,false,false,false)
+actionSprite = array(false,false,false,false,false,false,false,false,false,false,true)

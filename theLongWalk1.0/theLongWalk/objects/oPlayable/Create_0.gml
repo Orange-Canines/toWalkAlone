@@ -4,5 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-inventory = array(noone,noone,noone)
-bagSize   = 1
+inventory = array(1,2,3)
+Equipment = array(1,2,3,4)
+bagSize   = 2
+actions   = 1
+actionSprite = array(false,false,false,true,false,false,false,false,false,false,false)
