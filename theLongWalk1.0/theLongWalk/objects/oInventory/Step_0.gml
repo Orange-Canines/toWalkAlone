@@ -38,8 +38,8 @@ currentX += ceil((targetX-currentX)/10)
 #endregion
 
 // draw the arrow
-arrowButton.x = 38+currentX
-arrowButton.y = 126
+arrowButton.x = 16+currentX
+arrowButton.y = 106
 arrowButton.image_index = arrowIndex
 
 if (imageIndex = 1)

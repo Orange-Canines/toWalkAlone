@@ -6,7 +6,7 @@ draw_sprite(sInventory, imageIndex, currentX, 10)
 
 
 // Draw Stats ... possible revamp???
-if 	(open) {
+if (open) {
 	draw_set_font(Oswald20)
 	//draw_text((12-610)+currentX,36," THE " + string_upper(string(lastSelectedChar.Class)))
 	draw_text((510-610)+currentX,36,"$ " + string(lastSelectedChar.currency))

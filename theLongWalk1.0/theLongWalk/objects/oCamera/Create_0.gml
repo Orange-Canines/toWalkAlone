@@ -1,10 +1,9 @@
 /// @description Finds the ideal aspect ratio
-
 // sets aspect ratio
 ideal_width  = 0
 ideal_height = display_get_height()
 aspect_ratio = display_get_width()/display_get_height()
-// find the apprioriate with to the current height
+// find the apprioriate width to the current height
 ideal_width  = round(ideal_height*aspect_ratio)
 
 // a fancy trick to make the width an even number

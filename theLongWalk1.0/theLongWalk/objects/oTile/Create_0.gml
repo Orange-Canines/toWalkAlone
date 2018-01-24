@@ -1,5 +1,6 @@
 /// @description Initialize variables for tiles
 contains   = 0
+myItem     = noone
 selected   = false
 queued     = false
 enemyMove  = false
