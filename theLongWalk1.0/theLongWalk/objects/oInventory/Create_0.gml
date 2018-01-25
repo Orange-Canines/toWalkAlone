@@ -11,6 +11,7 @@ currentX    = 0
 targetX     = 0
 arrowIndex  = 0
 imageIndex  = 0
+openWith    = 1
 page        = 1 // 1 - Equipment 
 canLevelUp  = false
 itemToDisplay = noone

@@ -9,7 +9,7 @@ partyDeath = false
 characterSelected = false
 containsDecor     = array(noone,noone,noone)
 
-list      = ds_list_create()
+list = ds_list_create()
 N  = noone
 NE = noone
 SE = noone

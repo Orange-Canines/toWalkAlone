@@ -2,7 +2,6 @@
 event_inherited();
 
 tile.contains= 0
-tile.myItem  = self.id
 y            += 10
 itemID       = "RustySword"
 myItem       = irandom(4)

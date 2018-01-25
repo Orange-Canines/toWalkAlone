@@ -11,7 +11,7 @@ if (global.selected != 0)
 if (arrowButton.clicked) {
 	canLevelUp = false
 	if (!open) {
-		imageIndex = 1
+		imageIndex = openWith
 		open = true
 		targetX = 610
 	} else {
@@ -48,6 +48,7 @@ else if (imageIndex = 2)
 	invButton.image_index = 0
 else if (imageIndex = 3)
 	invButton.image_index = 1
+	
 #region // stats and level up
 // levelup button
 levelUp.x = currentX-174
