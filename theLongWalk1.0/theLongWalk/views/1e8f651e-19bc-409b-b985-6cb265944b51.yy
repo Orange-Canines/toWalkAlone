@@ -15,7 +15,8 @@
         "52448675-68d2-448c-bd2e-34feb10e20c3",
         "7f5dab53-723e-4342-b4c7-665f6e566e1f",
         "4a176e39-9dc1-4c84-ad76-e3f2de22a698",
-        "9987ded2-1df9-43f0-8e09-f4d93fb094d5"
+        "9987ded2-1df9-43f0-8e09-f4d93fb094d5",
+        "dc7430d7-64e5-4e2f-bfa8-85f73efb7ff2"
     ],
     "filterType": "GMScript",
     "folderName": "Tile Manipulation",

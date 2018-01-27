@@ -11,6 +11,17 @@ if (global.playerTurn) {
 		if (global.group[i] == self.id)
 			inGroup = i
 	if (inGroup > -1) {
+	
+		if (nextTo(oEnemy, attackRange) && (completedMove) && ds_queue_empty(global.moveTileQue) && (global.selected == self.id) ){
+			// To Do
+			// Modify Next to return enemy list
+			actionSprite = array(false,false,false,false,false,false,true,false,false,false,false)
+			createButtons();
+		
+		}else{
+			deleteButtons();
+		}
+		
 		numMoves = Stamina
 		if (Stamina > 0 && !death) {
 			if (global.startMove and id = global.selected) {
@@ -61,5 +72,40 @@ if (global.playerTurn) {
 				dust = true
 			}
 		}
-	} 
+	}else 
+		actionSprite = array(false,false,false,true,false,false,false,false,false,false,false)
+	for (i = 0; i < ds_list_size(buttonList); i++) {
+		buttonId = ds_list_find_value(buttonList, i)
+		if (buttonId.clicked) {
+			switch(buttonId.image_index) {
+				case 0:
+					//talking
+				break;
+				case 1:
+					// trade
+				break;
+				case 2:
+					// shop
+				break;
+				case 3:
+					for(var i = 0; i < 4; i++) {
+						if (global.group[i] == noone) {
+							global.group[i] = self.id
+							deleteButtons()
+							break
+						}
+					}
+				break;
+				case 4:
+					// accept
+				case 6: // Attack
+					if (!attacking){
+						attacking = true;
+						//Health -= targetChar.damage;
+						}  
+				break;
+			}
+		}
+	}
+
 }

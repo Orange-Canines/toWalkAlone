@@ -33,6 +33,8 @@ if (inGroup == -1) {
 				break;
 				case 4:
 					// accept
+				case 6: // Attack
+					Health -= targetChar.damage;  
 				break;
 			}
 		}
