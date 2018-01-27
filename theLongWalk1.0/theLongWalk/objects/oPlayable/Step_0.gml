@@ -11,15 +11,30 @@ if (global.playerTurn) {
 		if (global.group[i] == self.id)
 			inGroup = i
 	if (inGroup > -1) {
-	
-		if (nextTo(oEnemy, attackRange) && (completedMove) && ds_queue_empty(global.moveTileQue) && (global.selected == self.id) ){
-			// To Do
-			// Modify Next to return enemy list
+		if (nextTo(oEnemy, attackRange) && (completedMove) && 
+			ds_queue_empty(global.moveTileQue) && (global.selected == self.id) ) {
 			actionSprite = array(false,false,false,false,false,false,true,false,false,false,false)
-			createButtons();
-		
-		}else{
-			deleteButtons();
+			createButtons()
+		} else
+			deleteButtons()
+			
+		if (attacking && !foundEnemies) {
+			enemyList = enemiesNearMe(attackRange)	
+			foundEnemies = true
+		}
+		if (attacking && foundEnemies && !markedEnemies) {
+			for (var i = 0; i < ds_list_size(enemyList); i++) {
+				var enemy = ds_list_find_value(enemyList, i)
+				enemy.tile.enemyMove = true
+			}
+			markedEnemies = true
+		} else if (!attacking && markedEnemies) {
+			for (var i = 0; i < ds_list_size(enemyList); i++) {
+				var enemy = ds_list_find_value(enemyList, i)
+				enemy.tile.enemyMove = false
+			}
+			markedEnemies = false
+			foundEnemies = false
 		}
 		
 		numMoves = Stamina
@@ -72,8 +87,12 @@ if (global.playerTurn) {
 				dust = true
 			}
 		}
-	}else 
+	} else {
+		// set recruit button
 		actionSprite = array(false,false,false,true,false,false,false,false,false,false,false)
+		createButtons()
+	}
+	// do BUTTon stuff
 	for (i = 0; i < ds_list_size(buttonList); i++) {
 		buttonId = ds_list_find_value(buttonList, i)
 		if (buttonId.clicked) {
@@ -99,10 +118,7 @@ if (global.playerTurn) {
 				case 4:
 					// accept
 				case 6: // Attack
-					if (!attacking){
-						attacking = true;
-						//Health -= targetChar.damage;
-						}  
+					attacking = !attacking
 				break;
 			}
 		}
