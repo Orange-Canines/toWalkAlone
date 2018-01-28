@@ -23,7 +23,7 @@ bagSize = 0
 tile    = instance_nearest(x,y,oTile)
 x       = tile.x
 y       = tile.y
-tile.contains = self.id
+tile.contains = self.id 
 
 // set alarm to add to charlist
 alarm[0] = 1
@@ -47,6 +47,7 @@ dust     = false
 completedMove = true
 trapped       = false
 clearedQueue  = false
+attacking    = false
 
 // health and stamina bar variables
 blockWidth  = 16

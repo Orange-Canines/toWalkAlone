@@ -8,7 +8,8 @@ global.startMove    = false // allows the selected character to move
 global.selecting    = false // is the pl
 global.charSelected = noone // used for selecting character 
 global.playerTurn   = true  // whos turn true players turn false enemies turn
-
+global.enemySelected = noone // the enemy to attack
+global.attacker    = noone // player who attacked
 global.group = array(noone,noone,noone,noone)
 
 prevSelected        = global.selected

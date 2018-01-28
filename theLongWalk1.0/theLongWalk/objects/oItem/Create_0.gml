@@ -3,9 +3,11 @@ event_inherited();
 
 tile.contains= 0
 y            += 10
-itemID       = "RustySword"
-myItem       = irandom(4)
-rarity       = irandom(4)
+myItem       = 0
+rarity       = 0
+				//  
+minCost      = array(0,2)
+maxCost      = array(3,5)
 inspecting   = false
 distFromTile = 210
 xGap         = 110

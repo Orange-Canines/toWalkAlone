@@ -18,13 +18,18 @@ for(var i = 0; i < 6; i++) {
 			(neighbor.contains.object_index == objectToCheck or
 			object_is_ancestor(neighbor.contains.object_index, objectToCheck))
 		ds_list_add(enemyList,neighbor.contains)
-		
 	// if you need to check further out check the next tile
-	// return the what the recursive call returns		
+	// return the what the recursive call returns 
 	if distance > 1 and neighbor != noone {
-		nextEnemyList = enemiesNearMeRec(objectToCheck,distance-1,neighbor.list) 
-		for (var i = 0; i < ds_list_size(nextEnemyList); i++) {
-			ds_list_add(enemyList,ds_list_find_value(nextEnemyList,i))
+		nextEnemyList = enemiesNearMeRec(objectToCheck,distance-1,neighbor.list)
+		for (var j = 0; j < ds_list_size(nextEnemyList); j++){
+			var found = true
+			for (var k = 0; k < ds_list_size(enemyList); k++) {
+				if (ds_list_find_value(enemyList,k) == ds_list_find_value(nextEnemyList,i))	
+					found = false
+			}
+			if (found)
+				ds_list_add(enemyList,ds_list_find_value(nextEnemyList,j))
 		}
 	}
 }

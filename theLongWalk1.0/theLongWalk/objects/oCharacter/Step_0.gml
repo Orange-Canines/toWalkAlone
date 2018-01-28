@@ -13,15 +13,6 @@ if (inGroup == -1) {
 		buttonId = ds_list_find_value(buttonList, i)
 		if (buttonId.clicked) {
 			switch(buttonId.image_index) {
-				case 0:
-					//talking
-				break;
-				case 1:
-					// trade
-				break;
-				case 2:
-					// shop
-				break;
 				case 3:
 					for(var i = 0; i < 4; i++) {
 						if (global.group[i] == noone) {
@@ -30,11 +21,6 @@ if (inGroup == -1) {
 							break
 						}
 					}
-				break;
-				case 4:
-					// accept
-				case 6: // Attack
-					Health -= targetChar.damage;  
 				break;
 			}
 		}
@@ -79,8 +65,12 @@ if (global.startMove)
 	global.selecting = false
 // selects the character if you click it
 if (mouse_check_button_released(mb_left)) 
-	if (position_meeting(mouse_x,mouse_y,self) and ds_queue_empty(global.moveTileQue) and !global.startMove)
-		global.selected = self.id
+	if (position_meeting(mouse_x,mouse_y,self) and !position_meeting(mouse_x,mouse_y,oButton) and ds_queue_empty(global.moveTileQue) and !global.startMove)
+		if (tile.enemyMove and object_is_ancestor(object_index,oEnemy))
+			global.enemySelected = self.id
+		else
+			global.selected = self.id
+
 if (mouse_check_button_pressed(mb_left)) 
 	if (!position_meeting(mouse_x,mouse_y,oCharacter) and !position_meeting(mouse_x,mouse_y,oButton) and !global.startMove)
 		global.selected = 0

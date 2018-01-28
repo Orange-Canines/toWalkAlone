@@ -20,4 +20,5 @@ yMoves         = 0
 tileWidth      = 192
 tileHeight     = 102
 
+drawAttackOptions = false
 enemyTileQue   = ds_queue_create()

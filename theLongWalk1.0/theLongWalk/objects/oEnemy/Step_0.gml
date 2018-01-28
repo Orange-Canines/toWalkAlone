@@ -15,9 +15,9 @@ if (!global.playerTurn) {
 			else if (i+1 == Stamina)
 				chaseDist = Stamina
 		}
-			// move distance
-			queueChase()
-		moved = true
+		// move distance
+		queueChase()
+		moved = true	
 	} else if (!moved) { // move almost randomly
 		queueDir(dir,tile)	
 		dir = ((dir+3)%6)

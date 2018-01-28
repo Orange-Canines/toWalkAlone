@@ -10,34 +10,97 @@ if (global.playerTurn) {
 	for (var i = 0; i < 4; i++) 
 		if (global.group[i] == self.id)
 			inGroup = i
-	if (inGroup > -1) {
+	if (inGroup > -1) { 
+		// display the attack button when your within range to attack with the character
 		if (nextTo(oEnemy, attackRange) && (completedMove) && 
-			ds_queue_empty(global.moveTileQue) && (global.selected == self.id) ) {
+			ds_queue_empty(global.moveTileQue) && (global.selected == self.id)) {
 			actionSprite = array(false,false,false,false,false,false,true,false,false,false,false)
-			createButtons()
-		} else
+			createButtons() 
+		} else { // delete the drawn buttons when appropriate
 			deleteButtons()
-			
+			attacking = false
+			global.enemySelected = noone
+		}
+		
+		// finds enemies within your attack range
 		if (attacking && !foundEnemies) {
 			enemyList = enemiesNearMe(attackRange)	
 			foundEnemies = true
 		}
+		// highlights the enemies tile in red to show they are within range to attack
+		// also used to select the enemy for attacking, the tile must have enemyMove == true
 		if (attacking && foundEnemies && !markedEnemies) {
 			for (var i = 0; i < ds_list_size(enemyList); i++) {
 				var enemy = ds_list_find_value(enemyList, i)
 				enemy.tile.enemyMove = true
 			}
 			markedEnemies = true
-		} else if (!attacking && markedEnemies) {
+		}
+		// manage buttons for left and right hand weps and light and heavy attacks
+		if (attacking && markedEnemies && global.enemySelected != noone) {
+			var enemyX = global.enemySelected.x
+			var enemyY = global.enemySelected.y
+			for (var i = 0; i < numOfAttButtons; i++) {
+				var button = ds_list_find_value(attackButtons,i)
+				switch(i) {
+					case 0:
+						button.x = enemyX+(sign((enemyX+1)-global.selected.x))+10
+						button.y = enemyY-distFromTile+68
+					break
+					case 1: 
+						button.x = enemyX+(sign((enemyX+1)-global.selected.x))+10
+						button.y = enemyY-distFromTile+168
+					break
+					case 2:
+						button.x = enemyX+(sign((enemyX+1)-global.selected.x)*xSpace*2)+10
+						button.y = enemyY-distFromTile+68
+					break
+					case 3:
+						button.x = enemyX+(sign((enemyX+1)-global.selected.x)*xSpace*2)+10
+						button.y = enemyY-distFromTile+168
+					break
+				}
+				
+				button.visible = true
+				if (button.hover) 
+					button.image_index = 0
+				else 
+					button.image_index = 1
+				if (button.clicked) {
+					switch(i) {
+					case 0:
+						global.enemySelected.Health -= irandom_range(Equipment[i%2].minDamage[i], Equipment[i%2].maxDamage[i])
+						Stamina -= Equipment[i%2].cost[i]
+					break
+					case 1:
+						
+					break
+					case 2:
+						
+					break
+					case 3:
+						
+					break
+					}
+				}
+			}
+		}
+		// once your done attacking remove the red highlight and reset variables for another attack
+		if (!attacking && markedEnemies) {
 			for (var i = 0; i < ds_list_size(enemyList); i++) {
 				var enemy = ds_list_find_value(enemyList, i)
 				enemy.tile.enemyMove = false
 			}
 			markedEnemies = false
 			foundEnemies = false
+			global.enemySelected = noone
 		}
-		
+		if (attacking && global.enemySelected != noone) {
+			deleteButtons()
+		}
+		//variable that manages your number of moves
 		numMoves = Stamina
+		// if your aliving and kickin - nonpoint
 		if (Stamina > 0 && !death) {
 			if (global.startMove and id = global.selected) {
 				if (!ds_queue_empty(global.moveTileQue)) {
@@ -119,6 +182,10 @@ if (global.playerTurn) {
 					// accept
 				case 6: // Attack
 					attacking = !attacking
+					if attacking 
+						global.attacker = self.id
+					else 
+						global.attacker = noone
 				break;
 			}
 		}

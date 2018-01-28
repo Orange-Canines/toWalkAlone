@@ -1,6 +1,6 @@
 /// @description debug drawing
 // update the Y position of the black box
-if (self.id == global.selected) {
+if (self.id == global.selected || self.id == global.enemySelected) {
 	startY      = y-(sprite_height+disFromChar)
 	endY        = startY+(blockHeight*2)+(yGap*3)
 
@@ -27,7 +27,5 @@ if (self.id == global.selected) {
 	// draw stamina blocks
 	for (var i = 0; i < Stamina; i++) {
 		draw_sprite(sStamina,0,startX + xGap + i*(blockWidth+xGap), startY + xGap + yGap + blockHeight)
-	}
-	if (drawing)
-		draw_text(x,y,ds_list_size(buttonList) < actions)
+	}	
 }
