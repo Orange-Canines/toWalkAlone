@@ -50,8 +50,10 @@ if (death) {
 						}
 			}
 		} 
-		if (object_is_ancestor(object_index,oEnemy))
+		if (object_is_ancestor(object_index,oEnemy)) {
 			ds_list_delete(global.enemList, ds_list_find_index(global.enemList, self))
+			global.enemySelected = noone
+		}
 		else if (object_is_ancestor(object_index,oPlayable))
 			ds_list_delete(global.charList, ds_list_find_index(global.charList, self))
 		clearQueue()

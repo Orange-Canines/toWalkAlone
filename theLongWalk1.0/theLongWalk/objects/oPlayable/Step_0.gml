@@ -36,54 +36,94 @@ if (global.playerTurn) {
 			}
 			markedEnemies = true
 		}
+	
 		// manage buttons for left and right hand weps and light and heavy attacks
 		if (attacking && markedEnemies && global.enemySelected != noone) {
+			numOfAttButtons = 0
+			for (var i = 0; i < 2; i++) 
+				if (Equipment[i] != noone && Equipment[i].itemType == 0) 
+					numOfAttButtons += 2
+					
 			var enemyX = global.enemySelected.x
 			var enemyY = global.enemySelected.y
+			
 			for (var i = 0; i < numOfAttButtons; i++) {
+				if (!createdAttButtons) {
+					var button = instance_create_layer(x,y,"Utility",oButton)
+					button.sprite_index = sAttackButtons
+					button.image_index  = 0
+					ds_list_add(attackButtons,button)
+				}
 				var button = ds_list_find_value(attackButtons,i)
 				switch(i) {
 					case 0:
 						button.x = enemyX+(sign((enemyX+1)-global.selected.x))+10
 						button.y = enemyY-distFromTile+68
+						if (button.clicked) {
+							// if both have weapons
+							if (Equipment[0] != noone && Equipment[0].itemType == 0 && Equipment[1] != noone && Equipment[1].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[0], Equipment[0].maxDamage[0])
+								Stamina -= Equipment[0].cost[0]
+							// if right has weapon and not left
+							} else if (Equipment[0] != noone && Equipment[0].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[0], Equipment[0].maxDamage[0])
+								Stamina -= Equipment[0].cost[0]
+							// if left has weapon and not right
+							} else if (Equipment[1] != noone && Equipment[1].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[1].minDamage[0], Equipment[1].maxDamage[0])
+								Stamina -= Equipment[1].cost[0]
+							}
+						}
 					break
 					case 1: 
 						button.x = enemyX+(sign((enemyX+1)-global.selected.x))+10
 						button.y = enemyY-distFromTile+168
+						if (button.clicked) {
+							// if both have weapons
+							if (Equipment[0] != noone && Equipment[0].itemType == 0 && Equipment[1] != noone && Equipment[1].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[1], Equipment[0].maxDamage[1])
+								Stamina -= Equipment[0].cost[1]
+							// if right has weapon and not left
+							} else if (Equipment[0] != noone && Equipment[0].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[1], Equipment[0].maxDamage[1])
+								Stamina -= Equipment[0].cost[1]
+							// if left has weapon and not right
+							} else if (Equipment[1] != noone && Equipment[1].itemType == 0) {
+								global.enemySelected.Health -= irandom_range(Equipment[1].minDamage[1], Equipment[1].maxDamage[1])
+								Stamina -= Equipment[1].cost[1]
+							}
+						}
 					break
 					case 2:
 						button.x = enemyX+(sign((enemyX+1)-global.selected.x)*xSpace*2)+10
 						button.y = enemyY-distFromTile+68
+						if (button.clicked) {
+							global.enemySelected.Health -= irandom_range(Equipment[1].minDamage[0], Equipment[1].maxDamage[0])
+							Stamina -= Equipment[1].cost[0]
+						}
 					break
 					case 3:
 						button.x = enemyX+(sign((enemyX+1)-global.selected.x)*xSpace*2)+10
 						button.y = enemyY-distFromTile+168
+						if (button.clicked) {
+							global.enemySelected.Health -= irandom_range(Equipment[1].minDamage[1], Equipment[1].maxDamage[1])
+							Stamina -= Equipment[1].cost[1]
+						}
 					break
 				}
-				
-				button.visible = true
 				if (button.hover) 
 					button.image_index = 0
 				else 
 					button.image_index = 1
-				if (button.clicked) {
-					switch(i) {
-					case 0:
-						global.enemySelected.Health -= irandom_range(Equipment[i%2].minDamage[i], Equipment[i%2].maxDamage[i])
-						Stamina -= Equipment[i%2].cost[i]
-					break
-					case 1:
-						
-					break
-					case 2:
-						
-					break
-					case 3:
-						
-					break
-					}
-				}
 			}
+			createdAttButtons = true
+		}
+		if (global.enemySelected == noone) {
+			for (var i = 0; i < numOfAttButtons; i++) {
+				instance_destroy(ds_list_find_value(attackButtons,i))
+			}
+			createdAttButons = false
+			ds_list_clear(attackButtons)
 		}
 		// once your done attacking remove the red highlight and reset variables for another attack
 		if (!attacking && markedEnemies) {
