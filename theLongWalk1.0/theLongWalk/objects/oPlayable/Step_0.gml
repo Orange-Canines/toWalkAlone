@@ -118,8 +118,8 @@ if (global.playerTurn) {
 			}
 			createdAttButtons = true
 		}
-		if (global.enemySelected == noone) {
-			for (var i = 0; i < numOfAttButtons; i++) {
+		if (global.enemySelected == noone && createdAttButtons) {
+			for (var i = 0; i < ds_list_size(attackButtons); i++) {
 				instance_destroy(ds_list_find_value(attackButtons,i))
 			}
 			createdAttButons = false
