@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+//with(self ){
+//	deleteButtons();
+//}
 if (drawAttackOptions == "right") {
 	draw_sprite(sAttack,0,x+(sign((x+1)-global.selected.x)*xSpace),y-distFromTile)	
 } else if (drawAttackOptions == "left") {
