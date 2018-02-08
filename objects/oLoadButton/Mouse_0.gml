@@ -1,3 +1,0 @@
-FullLines = "";
-sLoadPlayerData();
-DrawData=true;

@@ -1,2 +1,0 @@
-DrawData=false;
-FullLines = "";
