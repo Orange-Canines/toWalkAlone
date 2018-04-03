@@ -17,7 +17,7 @@ if (ds_list_size(buttonList) < actions) {
 		buttonId.y = buttonId.y-distFromTile+(heightAndGap*(ds_list_size(buttonList)-1))
 	}
 	else{
-		buttonId.x = buttonId.x+(sign((x+1)-global.selected.x)*xSpace) + 165;
+		buttonId.x = buttonId.x+(sign((x+1)-global.selected.x)*xSpace)
 		buttonId.y = buttonId.y-distFromTile+(heightAndGap*(ds_list_size(buttonList)-1)) - 10
 	}
 	

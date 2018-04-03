@@ -61,15 +61,19 @@ if (global.playerTurn) {
 						button.y = enemyY-distFromTile+68
 						if (button.clicked) {
 							// if both have weapons
-							if (Equipment[0] != noone && Equipment[0].itemType == 0 && Equipment[1] != noone && Equipment[1].itemType == 0) {
+							if (Equipment[0] != noone && Equipment[0].itemType == 0 && 
+								Equipment[1] != noone && Equipment[1].itemType == 0 && 
+								Equipment[0].cost[0] <= Stamina) {
 								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[0], Equipment[0].maxDamage[0])
 								Stamina -= Equipment[0].cost[0]
 							// if right has weapon and not left
-							} else if (Equipment[0] != noone && Equipment[0].itemType == 0) {
+							} else if (Equipment[0] != noone && Equipment[0].itemType == 0 && 
+									   Equipment[0].cost[0] <= Stamina) {
 								global.enemySelected.Health -= irandom_range(Equipment[0].minDamage[0], Equipment[0].maxDamage[0])
 								Stamina -= Equipment[0].cost[0]
 							// if left has weapon and not right
-							} else if (Equipment[1] != noone && Equipment[1].itemType == 0) {
+							} else if (Equipment[1] != noone && Equipment[1].itemType == 0 && 
+									   Equipment[1].cost[0] <= Stamina) {
 								global.enemySelected.Health -= irandom_range(Equipment[1].minDamage[0], Equipment[1].maxDamage[0])
 								Stamina -= Equipment[1].cost[0]
 							}

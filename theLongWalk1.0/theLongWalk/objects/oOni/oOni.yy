@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oOni",
     "eventList": [
-        
+        {
+            "id": "8f53150f-924c-4e0f-9d1e-0c4e0cef6b8f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d3322986-91c3-44d5-be4a-ac895b315c55"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

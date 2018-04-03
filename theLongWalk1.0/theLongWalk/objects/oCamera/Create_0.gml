@@ -12,7 +12,7 @@ if(ideal_width & 1)
 
 // creates the camera and the corresponding matricies
 camera = camera_create()
-var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0)
+var vm = matrix_build_lookat(x,y,-10000,x,y,0,0,1,0)
 var pm = matrix_build_projection_ortho(ideal_width,ideal_height,1,10000)
 
 camera_set_view_mat(camera,vm)

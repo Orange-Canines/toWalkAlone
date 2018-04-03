@@ -9,7 +9,8 @@
         "16bae8f1-1fc2-469d-bd28-e5a5c8fa1453",
         "3bddb2e2-b83f-4c25-9824-6c0051e8d06b",
         "a58b441b-4e40-45e4-a43e-749befb24524",
-        "3ac838da-2cfb-4612-935d-9d7205a31bf2"
+        "3ac838da-2cfb-4612-935d-9d7205a31bf2",
+        "c14b5fca-e9ed-42c8-9843-fc18efecd7d4"
     ],
     "filterType": "GMObject",
     "folderName": "Playable",

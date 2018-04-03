@@ -35,18 +35,18 @@ else
 // set character stats
 switch(charIndex) {
 	case 0: // stats for adventurer
-		currentCharStats = array(1,2,3,4,5,6,7)
+		currentCharStats = array(4,3,2,3,2,1,4)
 	break
 	case 1:
-		currentCharStats = array(2,2,1,3,5,3,9)
+		currentCharStats = array(5,4,2,1,1,2,5)
 	break
 	case 2:
-		currentCharStats = array(1,2,3,4,5,6,7)
+		currentCharStats = array(1,2,1,4,2,3,7)
 	break
 	case 3:
-		currentCharStats = array(1,2,3,4,5,6,7)
+		currentCharStats = array(7,2,3,1,2,1,4)
 	break
 	case 4:
-		currentCharStats = array(1,2,3,4,5,6,7)
+		currentCharStats = array(2,1,4,3,4,2,5)
 	break
 }
